@@ -1,0 +1,707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="83ece40a-5f31-4566-8e8a-ef96d0329076" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QuizNoGUI.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/musicIndex.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/musicQuestions" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/Admin/Administrator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/Main/CategoryChooser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/Main/Counter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/Main/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/Question/Question$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/Question/Question$Builder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/Question/Question.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/Question/QuestionGenerator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/QuestionBase/MusicCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/QuestionBase/QuestionCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/QuestionBase/Questions.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/QuestionBase/ScienceCategory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/User/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/User/UserManagement.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/User/UsersList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/password.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/removal.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scienceIndex.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scienceQuestions" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Admin/Administrator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/CategoryChooser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Counter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Question/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Question/QuestionGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionBase/MusicCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionBase/QuestionCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionBase/Questions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionBase/ScienceCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/User/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/User/UserManagement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/User/UsersList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userIndex.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/kamil.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/piotr.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/szpak.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/szpakolec.obj" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="281" column="85" selection-start-line="281" selection-start-column="85" selection-end-line="281" selection-end-column="85" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionCategory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/QuestionBase/QuestionCategory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MusicCategory.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/QuestionBase/MusicCategory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#358#359#0" expanded="true" />
+                <element signature="e#403#404#0" expanded="true" />
+                <element signature="e#945#946#0" expanded="true" />
+                <element signature="e#1006#1007#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>buffer</find>
+      <find>m</find>
+      <find>5</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/UserProxy.java" />
+        <option value="$PROJECT_DIR$/src/UsersList.java" />
+        <option value="$PROJECT_DIR$/src/RandomQuestion.java" />
+        <option value="$PROJECT_DIR$/src/Administrator.java" />
+        <option value="$PROJECT_DIR$/src/QuestionComponent.java" />
+        <option value="$PROJECT_DIR$/src/Counter.java" />
+        <option value="$PROJECT_DIR$/src/ScienceCategory.java" />
+        <option value="$PROJECT_DIR$/src/CategoryChooser.java" />
+        <option value="$PROJECT_DIR$/src/QuestionCategory.java" />
+        <option value="$PROJECT_DIR$/answer.txt" />
+        <option value="$PROJECT_DIR$/music.txt" />
+        <option value="$PROJECT_DIR$/src/QuestionGroup.java" />
+        <option value="$PROJECT_DIR$/src/MusicCategory.java" />
+        <option value="$PROJECT_DIR$/src/InvalidPointerException.java" />
+        <option value="$PROJECT_DIR$/src/QuestionSaver.java" />
+        <option value="$PROJECT_DIR$/src/QuestionGenerator.java" />
+        <option value="$PROJECT_DIR$/src/Question.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/QuestionGroup/QuestionCategory.java" />
+        <option value="$PROJECT_DIR$/src/QuestionGroup/MusicCategory.java" />
+        <option value="$PROJECT_DIR$/src/QuestionBase/QuestionCategory2.java" />
+        <option value="$PROJECT_DIR$/src/QuestionBase/Question.java" />
+        <option value="$PROJECT_DIR$/password.txt" />
+        <option value="$PROJECT_DIR$/index" />
+        <option value="$PROJECT_DIR$/music" />
+        <option value="$PROJECT_DIR$/src/Question/QuestionSaver.java" />
+        <option value="$PROJECT_DIR$/index.txt" />
+        <option value="$PROJECT_DIR$/science" />
+        <option value="$PROJECT_DIR$/scienceIndex.txt" />
+        <option value="$PROJECT_DIR$/scienceQuestions" />
+        <option value="$PROJECT_DIR$/users" />
+        <option value="$PROJECT_DIR$/removal.txt" />
+        <option value="$PROJECT_DIR$/musicIndex.txt" />
+        <option value="$PROJECT_DIR$/musicQuestions" />
+        <option value="$PROJECT_DIR$/userIndex.txt" />
+        <option value="$PROJECT_DIR$/src/Question/QuestionGroup.java" />
+        <option value="$PROJECT_DIR$/src/Question/QuestionGenerator.java" />
+        <option value="$PROJECT_DIR$/src/User/User.java" />
+        <option value="$PROJECT_DIR$/src/User/UserManagement.java" />
+        <option value="$PROJECT_DIR$/src/QuestionBase/Questions.java" />
+        <option value="$PROJECT_DIR$/src/QuestionBase/ScienceCategory.java" />
+        <option value="$PROJECT_DIR$/src/Question/Question.java" />
+        <option value="$PROJECT_DIR$/src/Main/CategoryChooser.java" />
+        <option value="$PROJECT_DIR$/src/User/UsersList.java" />
+        <option value="$PROJECT_DIR$/src/Admin/Administrator.java" />
+        <option value="$PROJECT_DIR$/src/Main/CounterTask.java" />
+        <option value="$PROJECT_DIR$/src/Main/Tred.java" />
+        <option value="$PROJECT_DIR$/src/Main/Counter.java" />
+        <option value="$PROJECT_DIR$/src/Main/Main.java" />
+        <option value="$PROJECT_DIR$/src/QuestionBase/QuestionCategory.java" />
+        <option value="$PROJECT_DIR$/src/QuestionBase/MusicCategory.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="9" />
+    <option name="y" value="4" />
+    <option name="width" value="1267" />
+    <option name="height" value="943" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="QuizNoGUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuizNoGUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizNoGUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuizNoGUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizNoGUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuizNoGUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizNoGUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuizNoGUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizNoGUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuizNoGUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Question" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizNoGUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuizNoGUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="QuestionBase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="QuizNoGUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="QuizNoGUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../---" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\AGELASTA\IdeaProjects\QuizNoGUI" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AGELASTA\IdeaProjects\QuizNoGUI\users3" />
+      <recent name="C:\Users\AGELASTA\IdeaProjects\QuizNoGUI\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main.Main" />
+      <module name="QuizNoGUI" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="83ece40a-5f31-4566-8e8a-ef96d0329076" name="Default" comment="" />
+      <created>1547747960843</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547747960843</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="9" y="4" width="1267" height="943" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3293124" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36791316" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24540368" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3293124" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39927623" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24940048" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="9" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/music" />
+    <entry file="file://$PROJECT_DIR$/science" />
+    <entry file="file://$PROJECT_DIR$/src/Question/QuestionSaver.java" />
+    <entry file="file://$PROJECT_DIR$/password" />
+    <entry file="file://$PROJECT_DIR$/users3/users2.obj" />
+    <entry file="file://$PROJECT_DIR$/users.txt" />
+    <entry file="file://$PROJECT_DIR$/users2.obj" />
+    <entry file="file://$PROJECT_DIR$/users.obj" />
+    <entry file="file://$PROJECT_DIR$/users3/user1.obj" />
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/AbstractList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="152" selection-start-line="152" selection-end-line="152" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="1044" column="19" selection-start-line="1044" selection-start-column="19" selection-end-line="1044" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users3/szpakolec.obj" />
+    <entry file="file://$PROJECT_DIR$/users3/szpakolo.obj" />
+    <entry file="file://$PROJECT_DIR$/users3/szpak.obj" />
+    <entry file="file://$PROJECT_DIR$/users3/kamil.obj" />
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/concurrent/ConcurrentHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-968">
+          <caret line="1120" selection-start-line="1120" selection-end-line="1120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="1313" selection-start-line="1313" selection-end-line="1313" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="613" selection-start-line="613" selection-end-line="613" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/sun/nio/fs/WindowsException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/sun/nio/fs/WindowsFileSystemProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="269" selection-start-line="269" selection-end-line="269" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/sun/nio/fs/AbstractFileSystemProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/nio/file/Files.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="1133" selection-start-line="1133" selection-end-line="1133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Question/InvalidPointerException.java" />
+    <entry file="file://$PROJECT_DIR$/src/User/UserProxy.java" />
+    <entry file="file://$PROJECT_DIR$/src/Question/QuestionGroup.java" />
+    <entry file="file://$PROJECT_DIR$/src/QuestionBase/Questions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/User/UserInterface.java" />
+    <entry file="file://$PROJECT_DIR$/src/QuestionBase/RandomQuestion.java" />
+    <entry file="file://$PROJECT_DIR$/musicQuestions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/musicIndex.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scienceQuestions">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scienceIndex.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/password.obj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userIndex.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/User/UserManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionBase/Questions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionBase/ScienceCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="857">
+          <caret line="54" column="42" selection-start-line="54" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/User/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Question/QuestionGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Question/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/CategoryChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="264" column="12" selection-start-line="264" selection-start-column="12" selection-end-line="264" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/User/UsersList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#215#221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Admin/Administrator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Counter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/CounterTask.java" />
+    <entry file="file://$PROJECT_DIR$/src/Main/Counter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="281" column="85" selection-start-line="281" selection-start-column="85" selection-end-line="281" selection-end-column="85" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionBase/QuestionCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/removal.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionBase/MusicCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
+            <element signature="e#1006#1007#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>QuizNoGUI</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
