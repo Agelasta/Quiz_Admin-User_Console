@@ -2,52 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83ece40a-5f31-4566-8e8a-ef96d0329076" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuizNoGUI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/musicIndex.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/musicQuestions" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/Admin/Administrator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/Main/CategoryChooser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/Main/Counter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/Main/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/Question/Question$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/Question/Question$Builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/Question/Question.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/Question/QuestionGenerator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/QuestionBase/MusicCategory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/QuestionBase/QuestionCategory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/QuestionBase/Questions.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/QuestionBase/ScienceCategory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/User/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/User/UserManagement.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/User/UsersList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/password.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/removal.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scienceIndex.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scienceQuestions" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Admin/Administrator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/CategoryChooser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Counter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Question/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Question/QuestionGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuestionBase/MusicCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuestionBase/QuestionCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuestionBase/Questions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/QuestionBase/ScienceCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/User/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/User/UserManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/User/UsersList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userIndex.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/kamil.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/piotr.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/szpak.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/szpakolec.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/QuestionCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicIndex.txt" beforeDir="false" afterPath="$PROJECT_DIR$/musicIndex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/musicQuestions" beforeDir="false" afterPath="$PROJECT_DIR$/musicQuestions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/Admin/Administrator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/Main/CategoryChooser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/Main/Counter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/Main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/Question/Question$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/Question/Question$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/Question/Question.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/Question/QuestionGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/QuestionBase/MusicCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/QuestionBase/QuestionCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/QuestionBase/Questions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/QuestionBase/ScienceCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/User/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/User/UserManagement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/User/UsersList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/removal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/removal.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scienceIndex.txt" beforeDir="false" afterPath="$PROJECT_DIR$/scienceIndex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scienceQuestions" beforeDir="false" afterPath="$PROJECT_DIR$/scienceQuestions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Admin/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Administrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/CategoryChooser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CategoryChooser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Counter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppQuiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Question/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Question/QuestionGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestionGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuestionBase/MusicCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Music.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuestionBase/QuestionCategory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuestionBase/Questions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuestionBase/ScienceCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Science.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User/UserManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User/UsersList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userIndex.txt" beforeDir="false" afterPath="$PROJECT_DIR$/userIndex.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/kamil.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/piotr.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/szpak.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/szpakolec.obj" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,11 +53,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
+      <file leaf-file-name="AppQuiz.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppQuiz.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="281" column="85" selection-start-line="281" selection-start-column="85" selection-end-line="281" selection-end-column="85" />
+            <state relative-caret-position="221">
+              <caret line="310" column="74" selection-start-line="310" selection-start-column="74" selection-end-line="310" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,26 +65,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuestionCategory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/QuestionBase/QuestionCategory.java">
+      <file leaf-file-name="userIndex.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/userIndex.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MusicCategory.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/QuestionBase/MusicCategory.java">
+      <file leaf-file-name="QuickPlay.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/QuickPlay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+            <state relative-caret-position="291">
+              <caret line="38" column="43" lean-forward="true" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersListFileManagement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/UsersListFileManagement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1666">
+              <caret line="216" column="36" lean-forward="true" selection-start-line="216" selection-start-column="36" selection-end-line="216" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#358#359#0" expanded="true" />
-                <element signature="e#403#404#0" expanded="true" />
-                <element signature="e#945#946#0" expanded="true" />
-                <element signature="e#1006#1007#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,24 +118,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/UserProxy.java" />
-        <option value="$PROJECT_DIR$/src/UsersList.java" />
-        <option value="$PROJECT_DIR$/src/RandomQuestion.java" />
-        <option value="$PROJECT_DIR$/src/Administrator.java" />
-        <option value="$PROJECT_DIR$/src/QuestionComponent.java" />
-        <option value="$PROJECT_DIR$/src/Counter.java" />
-        <option value="$PROJECT_DIR$/src/ScienceCategory.java" />
-        <option value="$PROJECT_DIR$/src/CategoryChooser.java" />
-        <option value="$PROJECT_DIR$/src/QuestionCategory.java" />
-        <option value="$PROJECT_DIR$/answer.txt" />
-        <option value="$PROJECT_DIR$/music.txt" />
-        <option value="$PROJECT_DIR$/src/QuestionGroup.java" />
-        <option value="$PROJECT_DIR$/src/MusicCategory.java" />
-        <option value="$PROJECT_DIR$/src/InvalidPointerException.java" />
-        <option value="$PROJECT_DIR$/src/QuestionSaver.java" />
-        <option value="$PROJECT_DIR$/src/QuestionGenerator.java" />
         <option value="$PROJECT_DIR$/src/Question.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/QuestionGroup/QuestionCategory.java" />
         <option value="$PROJECT_DIR$/src/QuestionGroup/MusicCategory.java" />
         <option value="$PROJECT_DIR$/src/QuestionBase/QuestionCategory2.java" />
@@ -148,12 +130,9 @@
         <option value="$PROJECT_DIR$/index.txt" />
         <option value="$PROJECT_DIR$/science" />
         <option value="$PROJECT_DIR$/scienceIndex.txt" />
-        <option value="$PROJECT_DIR$/scienceQuestions" />
         <option value="$PROJECT_DIR$/users" />
         <option value="$PROJECT_DIR$/removal.txt" />
         <option value="$PROJECT_DIR$/musicIndex.txt" />
-        <option value="$PROJECT_DIR$/musicQuestions" />
-        <option value="$PROJECT_DIR$/userIndex.txt" />
         <option value="$PROJECT_DIR$/src/Question/QuestionGroup.java" />
         <option value="$PROJECT_DIR$/src/Question/QuestionGenerator.java" />
         <option value="$PROJECT_DIR$/src/User/User.java" />
@@ -161,15 +140,35 @@
         <option value="$PROJECT_DIR$/src/QuestionBase/Questions.java" />
         <option value="$PROJECT_DIR$/src/QuestionBase/ScienceCategory.java" />
         <option value="$PROJECT_DIR$/src/Question/Question.java" />
-        <option value="$PROJECT_DIR$/src/Main/CategoryChooser.java" />
         <option value="$PROJECT_DIR$/src/User/UsersList.java" />
         <option value="$PROJECT_DIR$/src/Admin/Administrator.java" />
         <option value="$PROJECT_DIR$/src/Main/CounterTask.java" />
         <option value="$PROJECT_DIR$/src/Main/Tred.java" />
         <option value="$PROJECT_DIR$/src/Main/Counter.java" />
-        <option value="$PROJECT_DIR$/src/Main/Main.java" />
-        <option value="$PROJECT_DIR$/src/QuestionBase/QuestionCategory.java" />
         <option value="$PROJECT_DIR$/src/QuestionBase/MusicCategory.java" />
+        <option value="$PROJECT_DIR$/src/QuestionBase/Music.java" />
+        <option value="$PROJECT_DIR$/src/Main/CategoryChooser.java" />
+        <option value="$PROJECT_DIR$/src/QuestionBase/QuestionCategory.java" />
+        <option value="$PROJECT_DIR$/src/Main/Main.java" />
+        <option value="$PROJECT_DIR$/src/Music.java" />
+        <option value="$PROJECT_DIR$/src/Science.java" />
+        <option value="$PROJECT_DIR$/src/Movies.java" />
+        <option value="$PROJECT_DIR$/moviesIndex" />
+        <option value="$PROJECT_DIR$/moviesQuestions" />
+        <option value="$PROJECT_DIR$/musicQuestions" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/CategoryChooser.java" />
+        <option value="$PROJECT_DIR$/scienceQuestions" />
+        <option value="$PROJECT_DIR$/src/Counter.java" />
+        <option value="$PROJECT_DIR$/src/Administrator.java" />
+        <option value="$PROJECT_DIR$/src/QuestionCategory.java" />
+        <option value="$PROJECT_DIR$/src/QuestionGenerator.java" />
+        <option value="$PROJECT_DIR$/src/QuickPlay.java" />
+        <option value="$PROJECT_DIR$/src/UserManagement.java" />
+        <option value="$PROJECT_DIR$/src/UsersList.java" />
+        <option value="$PROJECT_DIR$/userIndex.txt" />
+        <option value="$PROJECT_DIR$/src/UsersListFileManagement.java" />
+        <option value="$PROJECT_DIR$/src/AppQuiz.java" />
       </list>
     </option>
   </component>
@@ -185,9 +184,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -203,53 +199,32 @@
             <path>
               <item name="QuizNoGUI" type="b2602c69:ProjectViewProjectNode" />
               <item name="QuizNoGUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QuizNoGUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QuizNoGUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QuizNoGUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QuizNoGUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Question" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QuizNoGUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QuizNoGUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="QuestionBase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="QuizNoGUI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="QuizNoGUI" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="User" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../---" />
+    <property name="SearchEverywhereHistoryKey" value="indexy&#9;PSI&#9;JAVA://QuestionCategory#indexyt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Wzorce-Polecenie3" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\AGELASTA\IdeaProjects\QuizNoGUI" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\AGELASTA\IdeaProjects\QuizNoGUI\users3" />
       <recent name="C:\Users\AGELASTA\IdeaProjects\QuizNoGUI\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\AGELASTA\IdeaProjects\QuizNoGUI" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -265,8 +240,8 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main.Main" />
+    <configuration name="AppQuiz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AppQuiz" />
       <module name="QuizNoGUI" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -313,7 +288,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.AppQuiz" />
       </list>
     </recent_temporary>
   </component>
@@ -342,24 +317,24 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.43425813" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.36791316" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24540368" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3293124" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24540368" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39927623" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24940048" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3293124" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -371,12 +346,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/music" />
-    <entry file="file://$PROJECT_DIR$/science" />
-    <entry file="file://$PROJECT_DIR$/src/Question/QuestionSaver.java" />
-    <entry file="file://$PROJECT_DIR$/password" />
-    <entry file="file://$PROJECT_DIR$/users3/users2.obj" />
-    <entry file="file://$PROJECT_DIR$/users.txt" />
     <entry file="file://$PROJECT_DIR$/users2.obj" />
     <entry file="file://$PROJECT_DIR$/users.obj" />
     <entry file="file://$PROJECT_DIR$/users3/user1.obj" />
@@ -450,100 +419,21 @@
     <entry file="file://$PROJECT_DIR$/src/Question/InvalidPointerException.java" />
     <entry file="file://$PROJECT_DIR$/src/User/UserProxy.java" />
     <entry file="file://$PROJECT_DIR$/src/Question/QuestionGroup.java" />
-    <entry file="file://$PROJECT_DIR$/src/QuestionBase/Questions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Questions.java" />
     <entry file="file://$PROJECT_DIR$/src/User/UserInterface.java" />
     <entry file="file://$PROJECT_DIR$/src/QuestionBase/RandomQuestion.java" />
-    <entry file="file://$PROJECT_DIR$/musicQuestions">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/musicIndex.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scienceQuestions">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scienceIndex.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/password.obj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/userIndex.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/User/UserManagement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/QuestionBase/Questions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/QuestionBase/ScienceCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="857">
-          <caret line="54" column="42" selection-start-line="54" selection-end-line="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/User/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Question/QuestionGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Question/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/CategoryChooser.java">
+    <entry file="file://$PROJECT_DIR$/src/Counter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main/CounterTask.java" />
+    <entry file="file://$PROJECT_DIR$/src/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1020">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -554,56 +444,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/User/UsersList.java">
+    <entry file="file://$PROJECT_DIR$/src/Questions.java" />
+    <entry file="file://$PROJECT_DIR$/users/kamil.obj" />
+    <entry file="file://$PROJECT_DIR$/moviesQuestions">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#215#221#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Admin/Administrator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Counter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/CounterTask.java" />
-    <entry file="file://$PROJECT_DIR$/src/Main/Counter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="281" column="85" selection-start-line="281" selection-start-column="85" selection-end-line="281" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/QuestionBase/QuestionCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        <state relative-caret-position="867">
+          <caret line="51" column="6" selection-start-line="51" selection-start-column="6" selection-end-line="51" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -614,17 +460,162 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/QuestionBase/MusicCategory.java">
+    <entry file="file://$PROJECT_DIR$/scienceQuestions">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+        <state relative-caret-position="170">
+          <caret line="21" column="56" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CategoryChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="66" lean-forward="true" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Movies.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Counter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Music.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Science.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1007">
+          <caret line="157" column="97" lean-forward="true" selection-start-line="157" selection-start-column="97" selection-end-line="157" selection-end-column="97" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#1006#1007#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Administrator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="43" lean-forward="true" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-323">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="46" column="49" lean-forward="true" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scienceIndex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/musicIndex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/musicQuestions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moviesIndex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UsersList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/password.obj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UsersListFileManagement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1666">
+          <caret line="216" column="36" lean-forward="true" selection-start-line="216" selection-start-column="36" selection-end-line="216" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppQuiz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="310" column="74" selection-start-line="310" selection-start-column="74" selection-end-line="310" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuickPlay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="38" column="43" lean-forward="true" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userIndex.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
