@@ -53,6 +53,5 @@ public class User implements Serializable {
     public void setBestEfficiency(double bestEfficiency) {
         this.bestEfficiency = bestEfficiency;
     }
-
 }
 

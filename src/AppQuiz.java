@@ -1,65 +1,66 @@
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.regex.Pattern;
+import java.io.IOException;
 
 public class AppQuiz {
 
+    private static BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+    private static QuestionCategory questionCategory = new QuestionCategory();
+    private static Administrator admin = new Administrator();
+    private static UserManager userManager = new UserManager();
+    private static UsersList usersList = new UsersList();
+    private static UsersBackup usersBackup = new UsersBackup();
+    private static User currentUser;
+    private static String input;
+    private static String login;
+    private static String password;
+
+    private static final String QUICK_PLAY = "1";
+    private static final String PLAY = "2";
+    private static final String REGISTER = "3";
+    private static final String STATISTICS = "4";
+    private static final String CHANGE_LOGIN = "5";
+    private static final String CHANGE_PASSWORD = "6";
+    private static final String REMOVE_ACCOUNT = "7";
+    private static final String ADD_QUESTION = "8";
+    private static final String REMOVE_QUESTION = "9";
+    private static final String SHOW_QUESTIONS = "10";
+    private static final String ADD_USER = "11";
+    private static final String REMOVE_USER = "12";
+    private static final String SHOW_USERS = "13";
+    private static final String CHANGE_ADMIN_PASSWORD = "14";
+
+    private static final int CATEGORIES_IN_ROUND = 3;
+    private static final double QUESTIONS_IN_CATEGORY = 3;
+
     public static void main(String[] args) throws IOException {
 
-        final String QUICK_PLAY = "1";
-        final String PLAY = "2";
-        final String REGISTER = "3";
-        final String STATISTICS = "4";
-        final String CHANGE_LOGIN = "5";
-        final String CHANGE_PASSWORD = "6";
-        final String REMOVE_ACCOUNT = "7";
-        final String ADD_QUESTION = "8";
-        final String REMOVE_QUESTION = "9";
-        final String SHOW_QUESTIONS = "10";
-        final String ADD_USER = "11";
-        final String REMOVE_USER = "12";
-        final String SHOW_USERS = "13";
-        final String CHANGE_ADMIN_PASSWORD = "14";
-
-        Administrator admin = new Administrator();
-        UsersList usersList = new UsersList();
-        UserManagement userManager = new UserManagement();
-        UsersListFileManagement usersListFileManager = new UsersListFileManagement();
-        QuestionCategory questionCategory = new QuestionCategory();
-
         admin.fetchPassword();
-        usersListFileManager.readRemovalFile();
-        usersListFileManager.fetchUsers();
+        usersBackup.fetchUsers();
         questionCategory.getQuestionsList().clear();
 
-
-        //WELCOME
-
-        String input = null;
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-
         System.out.println("WELCOME TO OUR QUIZ!");
-        /*try {
-            Thread.sleep(1500);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }*/
-        System.out.println("WE HOPE YOU WILL ENJOY PLAYING WITH US");
 
-       /* try {
-            Thread.sleep(2000);
+        try {
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-*/
-        //START MENU
+        System.out.println("WE HOPE YOU WILL ENJOY PLAYING WITH US");
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
 
         do {
             do {
 
-                System.out.print("\n--- PLAYER MENU ---");
-                System.out.println("             --- ADMINISTRATOR MENU ---");
+                System.out.print("\n---- PLAYER MENU ----");
+                System.out.println("           --- ADMINISTRATOR MENU ---");
                 System.out.println("");
                 System.out.print("1 - QUICK PLAY");
                 System.out.println("                   8 - ADD QUESTION");
@@ -76,7 +77,6 @@ public class AppQuiz {
                 System.out.print("7 - REMOVE ACCOUNT");
                 System.out.println("              14 - CHANGE PASSWORD");
 
-
                 System.out.println("\nEXIT - press 'e'");
 
                 try {
@@ -90,12 +90,14 @@ public class AppQuiz {
                     && !(input.equals("9")) && !(input.equals("10")) && !(input.equals("11")) && !(input.equals("12"))
                     && !(input.equals("13")) && !(input.equals("14")) && !(input.equals("e")));
 
-            //SWITCH --------------------------------------------------------------------------------
-
 
             switch (input) {
 
                 case QUICK_PLAY:
+
+                    System.out.println("<< QUICK PLAYING >>\n");
+                    System.out.println("This is only a demo of our game with no time limit and no score saving.");
+                    System.out.println("Register and join our community to gain access to all available features!\n");
 
                     QuickPlay.playQuick();
 
@@ -106,17 +108,21 @@ public class AppQuiz {
                     if (usersList.getSize() == 0) {
                         System.out.println("This option is available only for registered users. Please register first.");
                     } else {
-                        System.out.println("Please enter your login:");
-                        String login2 = bufferedReader.readLine();
-                        System.out.println("Please enter your password:");
-                        String password2 = bufferedReader.readLine();
-                        User currentUser = userManager.logIn(login2, password2);
+
+                        System.out.println("<< PLAYER ROUND >>\n");
+
+                        AppQuiz.validateUser();
 
                         if (currentUser == null) {
                             System.out.println(" Try again.");
                         } else {
 
-                            for (int i = 0; i < 3; i++) {
+                            System.out.println("\nWelcome to the game!");
+                            System.out.println("You are to face questions in " + CATEGORIES_IN_ROUND + " categories.");
+                            System.out.println("You have 10 seconds to give an answer for each question.");
+                            System.out.println("Good luck!");
+
+                            for (int i = 0; i < CATEGORIES_IN_ROUND; i++) {
 
                                 do {
                                     System.out.println("\nChoose question category:");
@@ -141,17 +147,15 @@ public class AppQuiz {
                                     System.err.println("Error");
                                 }
                                 System.out.println("Prepare to answering...\n");
-                                System.out.println("You have 10 seconds to give an answer for each question.\n");
                                 try {
                                     Thread.sleep(2000);
                                 } catch (InterruptedException e) {
                                     System.err.println("Error");
                                 }
 
-                                 questionCategory.addFromFile();
+                                questionCategory.addFromFile();
 
-
-                                for (int j = 0; j < 5; j++) {
+                                for (int j = 0; j < QUESTIONS_IN_CATEGORY; j++) {
 
                                     System.out.println("Question nr " + (j + 1) + "\n");
                                     questionCategory.randomQuestion();
@@ -170,7 +174,7 @@ public class AppQuiz {
                                     }
                                     while (!(input.equals("1")) && !(input.equals("2")) && !(input.equals("3")));
 
-                                    if(counter.isAlive()) {
+                                    if (counter.isAlive()) {
 
                                         counter.setStopCounter(true);
 
@@ -180,8 +184,7 @@ public class AppQuiz {
                                         } else {
                                             System.out.println("Wrong answer!\n");
                                         }
-                                    }
-                                    else System.out.println("Too late... Time's up!\n");
+                                    } else System.out.println("Too late... Time's up!\n");
 
                                     questionCategory.remove();
                                 }
@@ -190,16 +193,19 @@ public class AppQuiz {
 
                                 questionCategory.getQuestionsList().clear();
                             }
+
                             if (currentUser.getBestScore() < currentUser.getScore()) {
                                 currentUser.setBestScore(currentUser.getScore());
                             }
 
-                            if (currentUser.getBestEfficiency() < (currentUser.getScore() / 15.0) * 100) {
-                                currentUser.setBestEfficiency((currentUser.getScore() / 15.0) * 100);
+                            if (currentUser.getBestEfficiency() < (currentUser.getScore() / (CATEGORIES_IN_ROUND *
+                                    QUESTIONS_IN_CATEGORY)) * 100) {
+                                currentUser.setBestEfficiency((currentUser.getScore() / (CATEGORIES_IN_ROUND *
+                                        QUESTIONS_IN_CATEGORY)) * 100);
                             }
 
                             currentUser.setScore(0);
-                            usersListFileManager.saveUser(currentUser);
+                            usersBackup.saveUser(currentUser);
                         }
                     }
 
@@ -207,25 +213,25 @@ public class AppQuiz {
 
                 case REGISTER:
 
-                    String login3;
-                    String password3;
+                    System.out.println("<< REGISTERING >>\n");
 
                     do {
-                        System.out.println("Login must contain at least one letter " +
+                        System.out.println("Login must contain at least 1 letter, not contain any whitespace " +
                                 "and have at least 4 characters length.");
                         System.out.println("Please create login:");
-                        login3 = bufferedReader.readLine();
-                    } while (!(Pattern.matches(".*[a-zA-Z]+.*", login3)) || login3.length() < 4);
+                        login = bufferedReader.readLine();
+                    }
+                    while (!(Pattern.matches("[^\\s]*[a-zA-Z]+[^\\s]*", login)) || login.length() < 4);
 
                     do {
-                        System.out.println("Password must contain at least one letter " +
+                        System.out.println("Password must contain at least 1 letter, not contain any whitespace " +
                                 "and have at least 4 characters length.");
                         System.out.println("Please create password:");
-                        password3 = bufferedReader.readLine();
+                        password = bufferedReader.readLine();
                     }
-                    while (!(Pattern.matches(".*[a-zA-Z]+.*", password3)) || password3.length() < 4);
+                    while (!(Pattern.matches("[^\\s]*[a-zA-Z]+[^\\s]*", password)) || password.length() < 4);
 
-                    userManager.register(login3, password3);
+                    userManager.register(login, password);
 
                     break;
 
@@ -235,21 +241,20 @@ public class AppQuiz {
                         System.out.println("There is no user registered. Please register first.");
                     } else {
 
-                        System.out.println("Please enter your login:");
-                        String login4 = bufferedReader.readLine();
-                        System.out.println("Please enter your password:");
-                        String password4 = bufferedReader.readLine();
-                        User currentUser = userManager.logIn(login4, password4);
+                        System.out.println("<< STATISTICS >>\n");
+
+                        AppQuiz.validateUser();
 
                         if (currentUser == null) {
                             System.out.println(" Try again.");
                         } else {
 
                             int bestScore = currentUser.getBestScore();
+
                             if (bestScore == 1) {
-                                System.out.println("Your best score is " + bestScore + " point.");
+                                System.out.println("\nYour best score is " + bestScore + " point.");
                             } else {
-                                System.out.println("Your best score is " + bestScore + " points.");
+                                System.out.println("\nYour best score is " + bestScore + " points.");
                             }
                             System.out.printf("Your best efficiency is %.2f", currentUser.getBestEfficiency());
                             System.out.println(" %.");
@@ -264,11 +269,9 @@ public class AppQuiz {
                         System.out.println("There is no user registered. Please register first.");
                     } else {
 
-                        System.out.println("Please enter your login:");
-                        String login5 = bufferedReader.readLine();
-                        System.out.println("Please enter your password:");
-                        String password5 = bufferedReader.readLine();
-                        User currentUser = userManager.logIn(login5, password5);
+                        System.out.println("<< CHANGING LOGIN >>\n");
+
+                        AppQuiz.validateUser();
 
                         if (currentUser == null) {
                             System.out.println(" Try again.");
@@ -277,14 +280,14 @@ public class AppQuiz {
                             String newLogin;
 
                             do {
-                                System.out.println("Login must contain of at least one letter " +
+                                System.out.println("Login must contain at least 1 letter, not contain any whitespace " +
                                         "and have at least 4 characters length.");
                                 System.out.println("Please enter new login:");
                                 newLogin = bufferedReader.readLine();
                             }
-                            while (!(Pattern.matches(".*[a-zA-Z]+.*", newLogin)) || newLogin.length() < 4);
+                            while (!(Pattern.matches("[^\\s]*[a-zA-Z]+[^\\s]*", newLogin)) || newLogin.length() < 4);
 
-                            userManager.changeLogin(login5, newLogin, currentUser);
+                            userManager.changeLogin(login, newLogin, currentUser);
                         }
                     }
                     break;
@@ -295,11 +298,9 @@ public class AppQuiz {
                         System.out.println("There is no user registered. Please register first.");
                     } else {
 
-                        System.out.println("Please enter your login:");
-                        String login6 = bufferedReader.readLine();
-                        System.out.println("Please enter your password:");
-                        String password6 = bufferedReader.readLine();
-                        User currentUser = userManager.logIn(login6, password6);
+                        System.out.println("<< CHANGING PASSWORD >>\n");
+
+                        AppQuiz.validateUser();
 
                         if (currentUser == null) {
                             System.out.println(" Try again.");
@@ -308,12 +309,12 @@ public class AppQuiz {
                             String newPassword;
 
                             do {
-                                System.out.println("Password must contain at least one letter " +
+                                System.out.println("Password must contain at least 1 letter, not contain any whitespace " +
                                         "and have at least 4 characters length.");
                                 System.out.println("Please enter new password:");
                                 newPassword = bufferedReader.readLine();
                             }
-                            while (!(Pattern.matches(".*[a-zA-Z]+.*", newPassword)) || newPassword.length() < 4);
+                            while (!(Pattern.matches("[^\\s]*[a-zA-Z]+[^\\s]*", newPassword)) || newPassword.length() < 4);
 
                             userManager.changePassword(newPassword, currentUser);
                         }
@@ -323,14 +324,12 @@ public class AppQuiz {
                 case REMOVE_ACCOUNT:
 
                     if (usersList.getSize() == 0) {
-                        System.out.println("There is no user registered. Please register first.");
+                        System.out.println("There is no user registered.");
                     } else {
 
-                        System.out.println("Please enter your login:");
-                        String login7 = bufferedReader.readLine();
-                        System.out.println("Please enter your password:");
-                        String password7 = bufferedReader.readLine();
-                        User currentUser = userManager.logIn(login7, password7);
+                        System.out.println("<< REMOVING ACCOUNT >>\n");
+
+                        AppQuiz.validateUser();
 
                         if (currentUser == null) {
                             System.out.println(" Try again.");
@@ -340,8 +339,8 @@ public class AppQuiz {
                             System.out.println("Y - YES       N - NO");
                             String confirmation = bufferedReader.readLine();
                             if (confirmation.equalsIgnoreCase("y")) {
-                                userManager.removeAccount(login7);
-                            }
+                                userManager.removeAccount(login);
+                            } else System.out.println("Your account remains active.");
                         }
                     }
                     break;
@@ -353,6 +352,8 @@ public class AppQuiz {
                     if (!(admin.getPassword().equals(bufferedReader.readLine()))) {
                         System.out.println("Password is not correct.");
                     } else {
+
+                        System.out.println("<< ADDING QUESTION >>\n");
 
                         String pointer;
 
@@ -385,7 +386,6 @@ public class AppQuiz {
                             questionCategory.saveQuestion(quest);
                         }
                     }
-
                     break;
 
                 case REMOVE_QUESTION:
@@ -396,21 +396,21 @@ public class AppQuiz {
                         System.out.println("Password is not correct.");
                     } else {
 
+                        System.out.println("<< REMOVING QUESTION >>\n");
+
                         System.out.println("Enter category:");
                         String category = bufferedReader.readLine();
                         questionCategory = CategoryChooser.chooseCategory(category);
 
                         if (questionCategory != null) {
+
                             questionCategory.showQuestionRemovalList();
                             System.out.println("\nChoose question number:");
                             int number = Integer.valueOf(bufferedReader.readLine());
                             questionCategory.removeQuestionFromFile(number);
-                        }
-                        else System.out.println("Category not found. Try again.");
+                        } else System.out.println("Category not found. Try again.");
 
                     }
-
-
                     break;
 
                 case SHOW_QUESTIONS:
@@ -421,6 +421,8 @@ public class AppQuiz {
                         System.out.println("Password is not correct.");
                     } else {
 
+                        System.out.println("<< QUESTIONS LIST >>\n");
+
                         System.out.println("Please enter category:");
                         String category = bufferedReader.readLine();
                         questionCategory = CategoryChooser.chooseCategory(category);
@@ -429,7 +431,6 @@ public class AppQuiz {
                             questionCategory.showQuestions();
                         else System.out.println("Category not found. Try again.");
                     }
-
                     break;
 
                 case ADD_USER:
@@ -440,34 +441,36 @@ public class AppQuiz {
                         System.out.println("Password is not correct.");
                     } else {
 
+                        System.out.println("<< ADDING USER >>\n");
+
                         System.out.println("Enter login:");
-                        String login11 = bufferedReader.readLine();
+                        login = bufferedReader.readLine();
                         System.out.println("Enter password:");
-                        String password11 = bufferedReader.readLine();
+                        password = bufferedReader.readLine();
 
-                        admin.addUser(login11, password11);
+                        admin.addUser(login, password);
                     }
-
                     break;
 
                 case REMOVE_USER:
 
-                        System.out.println("Please enter administrator password:");
+                    System.out.println("Please enter administrator password:");
 
-                        if (!(admin.getPassword().equals(bufferedReader.readLine()))) {
-                            System.out.println("Password is not correct.");
-                        } else {
+                    if (!(admin.getPassword().equals(bufferedReader.readLine()))) {
+                        System.out.println("Password is not correct.");
+                    } else {
 
-                            if (usersList.getSize() == 0)
-                                System.out.println("There is no user registered.");
-                            else {
+                        if (usersList.getSize() == 0)
+                            System.out.println("There is no user registered.");
+                        else {
 
-                                System.out.println("Enter login:");
-                            String login12 = bufferedReader.readLine();
-                            admin.removeUser(login12);
+                            System.out.println("<< REMOVING USER >>\n");
+
+                            System.out.println("Enter login:");
+                            login = bufferedReader.readLine();
+                            admin.removeUser(login);
                         }
                     }
-
                     break;
 
                 case SHOW_USERS:
@@ -478,8 +481,13 @@ public class AppQuiz {
                         System.out.println("Password is not correct.");
                     } else {
 
-                        admin.showUsers();
+                        if (usersList.getSize() == 0) {
+                            System.out.println("There is no user registered.");
+                        } else {
 
+                            System.out.println("<< USERS LIST >>\n");
+                            admin.showUsers();
+                        }
                     }
                     break;
 
@@ -491,6 +499,7 @@ public class AppQuiz {
                         System.out.println("Password is not correct.");
                     } else {
 
+                        System.out.println("<< CHANGING PASSWORD >>\n");
                         System.out.println("Please enter new password:");
                         String newPassword = bufferedReader.readLine();
                         admin.changePassword(newPassword);
@@ -500,6 +509,15 @@ public class AppQuiz {
 
         }
         while (!(input.equals("e")));
+    }
+
+    public static void validateUser() throws IOException {
+
+        System.out.println("Please enter your login:");
+        login = bufferedReader.readLine();
+        System.out.println("Please enter your password:");
+        password = bufferedReader.readLine();
+        currentUser = userManager.logIn(login, password);
     }
 }
 

@@ -3,13 +3,13 @@ import java.io.*;
 public class Administrator {
 
     private String administratorPassword;
-    private UsersList usersListManager;
-    private UsersListFileManagement usersListFileManager;
+    private UsersList usersList;
+    private UsersBackup usersBackup;
 
     public Administrator() {
 
-        usersListManager = new UsersList();
-        usersListFileManager = new UsersListFileManagement();
+        usersList = new UsersList();
+        usersBackup = new UsersBackup();
     }
 
     public String getPassword() {return administratorPassword;}
@@ -18,7 +18,7 @@ public class Administrator {
 
     public void fetchPassword() {
 
-        String password = null;
+        String password;
 
         try ( var ois = new ObjectInputStream(new FileInputStream("password.obj")))
         {
@@ -47,30 +47,23 @@ public class Administrator {
 
     public void addUser(String login, String password) {
 
-        usersListManager = new UsersList();
-        usersListManager.addUser(new User(login, password));
-
+        usersList.addUser(new User(login, password));
     }
 
     public void removeUser(String login) {
 
-        usersListManager = new UsersList();
-        usersListFileManager = new UsersListFileManagement();
-
-        if (usersListManager.isUserExist(login)) {
-            usersListManager.removeUser(login);
-            usersListFileManager.deleteUserFromUserIndex(login);
-            usersListFileManager.createRemovalFile(login);
-            usersListFileManager.deleteUserFile(login);
+        if (usersList.isUserExist(login)) {
+            usersList.removeUser(login);
+            usersBackup.deleteUserFromUserIndex(login);
+            usersBackup.deleteUserFile(login);
+            System.out.println("User " + login + " removed.");
         } else System.out.println("User does not exist.");
     }
 
     public void showUsers() {
 
-        usersListManager = new UsersList();
-
-        if (usersListManager.getSize() > 0)
-            usersListManager.showList();
+        if (usersList.getSize() > 0)
+            usersList.showList();
         else System.out.println("There is no user registered.");
     }
 }

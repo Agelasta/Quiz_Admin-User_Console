@@ -4,6 +4,8 @@ public class QuickPlay {
 
     public static void playQuick() {
 
+        final int NUMBER_OF_QUESTIONS = 3;
+
         QuestionCategory music = new Music();
         QuestionCategory science = new Science();
         QuestionCategory movies = new Movies();
@@ -14,7 +16,7 @@ public class QuickPlay {
 
         int score = 0;
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < NUMBER_OF_QUESTIONS; i++) {
 
             science.randomQuestion();
             String answer = science.getAnswer();

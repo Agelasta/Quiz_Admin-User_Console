@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
-public class UsersListFileManagement {
+public class UsersBackup {
 
     public void saveUser(User user) {
 
@@ -45,7 +45,7 @@ public class UsersListFileManagement {
         var properties = new Properties();
         int index = 0;
 
-        try (var reader = new FileReader("userIndex.txt");) {
+        try (var reader = new FileReader("userIndex.txt")) {
             properties.load(reader);
         } catch (IOException e) {
             System.err.println("Error while reading file");
@@ -60,7 +60,7 @@ public class UsersListFileManagement {
 
         properties.setProperty(String.valueOf(index), newLogin);
 
-        try (var writer = new FileWriter("userIndex.txt");) {
+        try (var writer = new FileWriter("userIndex.txt")) {
             properties.store(writer, "Users");
         } catch (IOException e) {
             System.err.println("Error - login not changed");
@@ -75,68 +75,6 @@ public class UsersListFileManagement {
             System.err.println("Please restart program to complete requested operation.");
         }
     }
-
-
-    public void createRemovalFile(String login) {
-
-        var properties = new Properties();
-
-        try (var reader = new FileReader("removal.txt");) {
-            properties.load(reader);
-        } catch (IOException e) {
-            System.err.println("Error while reading file");
-        }
-
-        String index = properties.getProperty("index");
-        String index2 = String.valueOf(Integer.valueOf(index) + 1);
-
-        properties.setProperty(index, login);
-        properties.setProperty("index", index2);
-
-        try (var writer = new FileWriter("removal.txt", true)) {
-            properties.store(writer, "Removed");
-        } catch (IOException e) {
-            System.err.println("Error - file not created");
-        }
-    }
-
-    public void readRemovalFile() {
-
-        var properties = new Properties();
-        String login;
-        String key;
-
-        try (var reader = new FileReader("removal.txt")) {
-            properties.load(reader);
-        } catch (IOException e) {
-            System.err.println("Error while reading file");
-        }
-
-        if (properties.size() > 1) {
-
-            Set<Map.Entry<Object, Object>> logins = properties.entrySet();
-
-            for (Map.Entry<Object, Object> object : logins) {
-                key = (String) object.getKey();
-                login = (String) object.getValue();
-
-                File file = new File("users\\" + login + ".obj");
-
-                if (file.exists()) {
-                    file.delete();
-                }
-                properties.remove(key, login);
-            }
-        }
-        try (var writer = new FileWriter("removal.txt")) {
-            properties.setProperty("index", "1");
-            properties.store(writer, "Removed");
-
-        } catch (IOException e) {
-            System.err.println("Error - file not reseted");
-        }
-    }
-
 
     public void deleteUserFromUserIndex(String login) {
 
@@ -182,7 +120,6 @@ public class UsersListFileManagement {
         }
     }
 
-
     public void saveNewLogin(String oldLogin, String newLogin) {
 
         User user = null;
@@ -200,7 +137,6 @@ public class UsersListFileManagement {
         changeLoginInUserIndex(oldLogin, newLogin);
 
         deleteUserFile(oldLogin);
-
     }
 
     public void fetchUsers() {

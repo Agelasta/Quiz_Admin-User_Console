@@ -11,6 +11,7 @@ public class QuestionCategory {
     private static List<Question> questions = new ArrayList<>();
     private int number;
     private int index;
+    private final int SINGLE_QUESTION_VOLUME = 5;
 
     public List<Question> getQuestionsList() {
         return questions;
@@ -26,7 +27,6 @@ public class QuestionCategory {
         System.out.println("1) " + questions.get(index).getOption1());
         System.out.println("2) " + questions.get(index).getOption2());
         System.out.println("3) " + questions.get(index).getOption3());
-
     }
 
     public void randomQuestion() {
@@ -42,7 +42,7 @@ public class QuestionCategory {
     public void showQuestions() {
 
         var properties = new Properties();
-        int number = 1;
+        int counter = 1;
         readIndex();
 
         try ( var reader = new FileReader(this.getClass().getName().toLowerCase() + "Questions"))
@@ -52,7 +52,8 @@ public class QuestionCategory {
             System.err.println("Error while reading file");
         }
 
-        List<Integer> questionNumbers = Stream.iterate(1, x -> x + 5).limit(index / 5).collect(Collectors.toList());
+        List<Integer> questionNumbers = Stream.iterate(1, x -> x + SINGLE_QUESTION_VOLUME)
+                .limit(index / SINGLE_QUESTION_VOLUME).collect(Collectors.toList());
 
         Set<Map.Entry<Object, Object>> questions = properties.entrySet();
 
@@ -60,12 +61,12 @@ public class QuestionCategory {
             String key = (String) object.getKey();
             String value = (String) object.getValue();
             if (questionNumbers.contains(Integer.valueOf(key))) {
-                System.out.println(number + ": " + value);
+                System.out.println(counter + ": " + value);
                 System.out.println("1) " + properties.getProperty(String.valueOf(Integer.valueOf(key) + 1)));
                 System.out.println("2) " + properties.getProperty(String.valueOf(Integer.valueOf(key) + 2)));
                 System.out.println("3) " + properties.getProperty(String.valueOf(Integer.valueOf(key) + 3)));
                 System.out.println("");
-                number++;
+                counter++;
             }
         }
         System.out.println("Number of questions: " + index/5 + "\n");
@@ -84,7 +85,7 @@ public class QuestionCategory {
             System.err.println("Error while reading file");
         }
 
-        for (int i = 0; i < property.size() / 5; i++) {
+        for (int i = 0; i < property.size() / SINGLE_QUESTION_VOLUME; i++) {
             questions.add(new Question.Builder()
                     .question(property.getProperty(String.valueOf(number)))
                     .option1(property.getProperty(String.valueOf(++number)))
@@ -119,10 +120,10 @@ public class QuestionCategory {
         System.out.println("Question saved.");
     }
 
-
     public int readIndex() {
 
-        try ( var bufferedReader = new BufferedReader(new FileReader(this.getClass().getName().toLowerCase() + "Index")))
+        try ( var bufferedReader = new BufferedReader(new FileReader(this.getClass().getName().toLowerCase()
+                + "Index")))
         {
             index = Integer.valueOf(bufferedReader.readLine());
         } catch (IOException e) {
@@ -153,7 +154,8 @@ public class QuestionCategory {
             System.out.println("Error while reading file");
         }
 
-        List<Integer> questionNumbers = Stream.iterate(1, x -> x + 5).limit(index / 5).collect(Collectors.toList());
+        List<Integer> questionNumbers = Stream.iterate(1, x -> x + SINGLE_QUESTION_VOLUME)
+                .limit(index / SINGLE_QUESTION_VOLUME).collect(Collectors.toList());
 
         try ( var reader = new FileReader(this.getClass().getName().toLowerCase() + "Questions"))
         {
@@ -184,7 +186,7 @@ public class QuestionCategory {
             System.out.println("Error while reading file");
         }
 
-        for (int i = number; i < number + 5; i++) {
+        for (int i = number; i < number + SINGLE_QUESTION_VOLUME; i++) {
             properties.remove(String.valueOf(i));
         }
 
@@ -195,7 +197,7 @@ public class QuestionCategory {
             String value = (String) object2.getValue();
 
             if (Integer.valueOf(key) > number) {
-                properties.setProperty(String.valueOf(Integer.valueOf(key) - 5), value);
+                properties.setProperty(String.valueOf(Integer.valueOf(key) - SINGLE_QUESTION_VOLUME), value);
                 properties.remove(key);
             }
         }
@@ -207,7 +209,7 @@ public class QuestionCategory {
             System.out.println("Error while removing question");
         }
 
-        System.out.println("Question removed");
+        System.out.println("Question removed.");
 
         changeIndexInFile();
     }
@@ -223,7 +225,7 @@ public class QuestionCategory {
             System.out.println("Error");
         }
 
-        index -= 5;
+        index -= SINGLE_QUESTION_VOLUME;
 
         try ( var writer = new FileWriter(this.getClass().getName().toLowerCase() + "Index"))
         {

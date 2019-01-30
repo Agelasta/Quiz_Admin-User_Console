@@ -1,6 +1,5 @@
 public class CategoryChooser {
 
-
     public static QuestionCategory chooseCategory(String choice) {
 
         QuestionCategory questionCategory = null;
@@ -12,7 +11,6 @@ public class CategoryChooser {
         } else if (choice.equals("3") || choice.equalsIgnoreCase("movies")) {
             questionCategory = new Movies();
         }
-
         return questionCategory;
     }
 }
