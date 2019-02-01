@@ -10,9 +10,11 @@ public class QuickPlay {
         QuestionCategory science = new Science();
         QuestionCategory movies = new Movies();
 
-        music.addFromFile();
-        science.addFromFile();
-        movies.addFromFile();
+        science.getQuestionsList().clear();
+
+        music.addQuestionsFromFile();
+        science.addQuestionsFromFile();
+        movies.addQuestionsFromFile();
 
         int score = 0;
 
@@ -21,16 +23,17 @@ public class QuickPlay {
             science.randomQuestion();
             String answer = science.getAnswer();
             science.remove();
-            String userInput;
+
+            String input;
 
             do {
                 System.out.println("\nEnter 1, 2 or 3:");
                 Scanner sc = new Scanner(System.in);
-                userInput = sc.nextLine();
+                input = sc.nextLine();
             }
-            while (!(userInput.equals("1")) && !(userInput.equals("2")) && !(userInput.equals("3")));
+            while (!(input.equals("1")) && !(input.equals("2")) && !(input.equals("3")));
 
-            if (userInput.equals(answer)) {
+            if (input.equals(answer)) {
                 System.out.println("Congratulations! You have scored 1 point.\n");
                 score++;
             } else {

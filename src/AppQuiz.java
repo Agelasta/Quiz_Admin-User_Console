@@ -6,11 +6,9 @@ import java.io.IOException;
 public class AppQuiz {
 
     private static BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-    private static QuestionCategory questionCategory = new QuestionCategory();
     private static Administrator admin = new Administrator();
     private static UserManager userManager = new UserManager();
     private static UsersList usersList = new UsersList();
-    private static UsersBackup usersBackup = new UsersBackup();
     private static User currentUser;
     private static String input;
     private static String login;
@@ -32,25 +30,24 @@ public class AppQuiz {
     private static final String CHANGE_ADMIN_PASSWORD = "14";
 
     private static final int CATEGORIES_IN_ROUND = 3;
-    private static final double QUESTIONS_IN_CATEGORY = 3;
+    private static final int QUESTIONS_IN_CATEGORY = 3;
 
     public static void main(String[] args) throws IOException {
 
         admin.fetchPassword();
-        usersBackup.fetchUsers();
-        questionCategory.getQuestionsList().clear();
+        usersList.fetchUsers();
 
         System.out.println("WELCOME TO OUR QUIZ!");
 
         try {
-            Thread.sleep(1000);
+            Thread.sleep(1500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println("WE HOPE YOU WILL ENJOY PLAYING WITH US");
+        System.out.println("WE HOPE YOU WILL ENJOY PLAYING WITH US!");
 
         try {
-            Thread.sleep(1000);
+            Thread.sleep(2500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -60,7 +57,7 @@ public class AppQuiz {
             do {
 
                 System.out.print("\n---- PLAYER MENU ----");
-                System.out.println("           --- ADMINISTRATOR MENU ---");
+                System.out.println("           -- ADMINISTRATOR MENU --");
                 System.out.println("");
                 System.out.print("1 - QUICK PLAY");
                 System.out.println("                   8 - ADD QUESTION");
@@ -96,7 +93,7 @@ public class AppQuiz {
                 case QUICK_PLAY:
 
                     System.out.println("<< QUICK PLAYING >>\n");
-                    System.out.println("This is only a demo of our game with no time limit and no score saving.");
+                    System.out.println("This is only a demo of our game with no time limit and no ability to save results.");
                     System.out.println("Register and join our community to gain access to all available features!\n");
 
                     QuickPlay.playQuick();
@@ -122,6 +119,12 @@ public class AppQuiz {
                             System.out.println("You have 10 seconds to give an answer for each question.");
                             System.out.println("Good luck!");
 
+                            try {
+                                Thread.sleep(3000);
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
+
                             for (int i = 0; i < CATEGORIES_IN_ROUND; i++) {
 
                                 do {
@@ -138,7 +141,7 @@ public class AppQuiz {
                                 }
                                 while (!(input.equals("1")) && !(input.equals("2")) && !(input.equals("3")));
 
-                                questionCategory = CategoryChooser.chooseCategory(input);
+                                QuestionCategory questionCategory = CategoryChooser.chooseCategory(input);
 
 
                                 try {
@@ -153,7 +156,8 @@ public class AppQuiz {
                                     System.err.println("Error");
                                 }
 
-                                questionCategory.addFromFile();
+                                questionCategory.getQuestionsList().clear();
+                                questionCategory.addQuestionsFromFile();
 
                                 for (int j = 0; j < QUESTIONS_IN_CATEGORY; j++) {
 
@@ -184,7 +188,8 @@ public class AppQuiz {
                                         } else {
                                             System.out.println("Wrong answer!\n");
                                         }
-                                    } else System.out.println("Too late... Time's up!\n");
+                                    }
+                                    else System.out.println("Too late... Time's up!\n");
 
                                     questionCategory.remove();
                                 }
@@ -198,14 +203,14 @@ public class AppQuiz {
                                 currentUser.setBestScore(currentUser.getScore());
                             }
 
-                            if (currentUser.getBestEfficiency() < (currentUser.getScore() / (CATEGORIES_IN_ROUND *
+                            if (currentUser.getBestEfficiency() < ((double)currentUser.getScore() / (CATEGORIES_IN_ROUND *
                                     QUESTIONS_IN_CATEGORY)) * 100) {
-                                currentUser.setBestEfficiency((currentUser.getScore() / (CATEGORIES_IN_ROUND *
+                                currentUser.setBestEfficiency(((double)currentUser.getScore() / (CATEGORIES_IN_ROUND *
                                         QUESTIONS_IN_CATEGORY)) * 100);
                             }
 
                             currentUser.setScore(0);
-                            usersBackup.saveUser(currentUser);
+                            usersList.saveUsers();
                         }
                     }
 
@@ -338,9 +343,11 @@ public class AppQuiz {
                             System.out.println("Are you sure to remove your account?");
                             System.out.println("Y - YES       N - NO");
                             String confirmation = bufferedReader.readLine();
+
                             if (confirmation.equalsIgnoreCase("y")) {
                                 userManager.removeAccount(login);
-                            } else System.out.println("Your account remains active.");
+                            }
+                            else System.out.println("Your account remains active.");
                         }
                     }
                     break;
@@ -355,12 +362,10 @@ public class AppQuiz {
 
                         System.out.println("<< ADDING QUESTION >>\n");
 
-                        String pointer;
-
                         System.out.println("Enter category:");
                         String category = bufferedReader.readLine();
 
-                        questionCategory = CategoryChooser.chooseCategory(category);
+                        QuestionCategory questionCategory = CategoryChooser.chooseCategory(category);
 
                         if (questionCategory == null) System.out.println("Category not found. Try again.");
 
@@ -374,6 +379,8 @@ public class AppQuiz {
                             String option2 = bufferedReader.readLine();
                             System.out.println("Enter option3:");
                             String option3 = bufferedReader.readLine();
+
+                            String pointer;
 
                             do {
                                 System.out.println("Enter number of option which is an answer:");
@@ -400,15 +407,28 @@ public class AppQuiz {
 
                         System.out.println("Enter category:");
                         String category = bufferedReader.readLine();
-                        questionCategory = CategoryChooser.chooseCategory(category);
+                        QuestionCategory questionCategory = CategoryChooser.chooseCategory(category);
 
                         if (questionCategory != null) {
 
                             questionCategory.showQuestionRemovalList();
-                            System.out.println("\nChoose question number:");
-                            int number = Integer.valueOf(bufferedReader.readLine());
+
+                            int number;
+
+                            try {
+                                do {
+
+                                    System.out.println("\nChoose question number from the list above:");
+                                    number = Integer.valueOf(bufferedReader.readLine());
+                                }
+                                while (!(number % 5 == 1));
+                            }
+                            catch(NumberFormatException e) {
+                                number = 0;
+                            }
                             questionCategory.removeQuestionFromFile(number);
-                        } else System.out.println("Category not found. Try again.");
+                        }
+                        else System.out.println("Category not found. Try again.");
 
                     }
                     break;
@@ -425,11 +445,14 @@ public class AppQuiz {
 
                         System.out.println("Please enter category:");
                         String category = bufferedReader.readLine();
-                        questionCategory = CategoryChooser.chooseCategory(category);
+                        QuestionCategory questionCategory = CategoryChooser.chooseCategory(category);
 
-                        if (questionCategory != null)
+                        if (questionCategory != null) {
                             questionCategory.showQuestions();
-                        else System.out.println("Category not found. Try again.");
+                        }
+                        else {
+                            System.out.println("Category not found. Try again.");
+                        }
                     }
                     break;
 
@@ -506,7 +529,6 @@ public class AppQuiz {
                     }
                     break;
             }
-
         }
         while (!(input.equals("e")));
     }

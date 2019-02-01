@@ -1,12 +1,12 @@
 #Music
-#Wed Jan 30 14:47:56 CET 2019
+#Fri Feb 01 14:54:42 CET 2019
 44=dubstep
 45=3
-46=Can you hear the frequency of 40 kHz?
-47=yes
-48=no
+46=Can you hear the frequency of 40 000 Hz?
+47=no
+48=yes
 49=it depends on the instrument used
-50=2
+50=1
 10=2
 11=How can you play hang?
 12=with hands
@@ -17,6 +17,7 @@
 17=e
 18=g
 19=h
+index=51
 1=How many keys does the piano have?
 2=69
 3=88

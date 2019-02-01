@@ -1,21 +1,19 @@
 public class UserManager {
 
-    private UsersBackup usersBackup;
     private UsersList usersList;
 
     public UserManager() {
-        usersBackup = new UsersBackup();
         usersList = new UsersList();
     }
 
     public void changeLogin(String oldLogin, String newLogin, User user) {
 
         if(!(usersList.isUserExist(newLogin))) {
-
                 user.setLogin(newLogin);
+                UsersList.getUsersList().put(newLogin, user);
+                UsersList.getUsersList().remove(oldLogin);
+                usersList.saveUsers();
                 System.out.println("Login changed.");
-                usersBackup.saveNewLogin(oldLogin, newLogin);
-
         }
         else System.out.println("This login is not available.");
     }
@@ -23,28 +21,26 @@ public class UserManager {
     public void changePassword(String newPassword, User user) {
 
         user.setPassword(newPassword);
+        usersList.saveUsers();
         System.out.println("Password changed.");
-        usersBackup.saveUser(user);
     }
 
     public void removeAccount(String login) {
 
             usersList.removeUser(login);
-            usersBackup.deleteUserFromUserIndex(login);
-            usersBackup.deleteUserFile(login);
+            usersList.saveUsers();
             System.out.println("Account successfully removed.");
     }
 
     public void register(String login, String password) {
 
-        User user;
-
         if (!(usersList.isUserExist(login))) {
 
-            user = new User(login, password);
+            User user = new User(login, password);
             usersList.addUser(user);
-
-        } else System.out.println("User " + login + " already exists.");
+            usersList.saveUsers();
+        }
+        else System.out.println("User " + login + " already exists.");
     }
 
     public User logIn(String login, String password) {

@@ -1,48 +1,39 @@
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.*;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.TreeMap;
 
 public class UsersList implements Serializable {
 
-    private static List<User> usersList = new ArrayList<>();
+    private static Map<String, User> usersList = new TreeMap<>();
 
-    public static List<User> getUsersList() {
+    public static Map<String, User> getUsersList() {
         return usersList;
     }
 
     public void addUser(User user) {
 
-        UsersBackup usersBackup = new UsersBackup();
-
         if (isUserExist(user.getLogin())) {
             System.out.println("User " + user.getLogin() + " already exists.");
         }
         else {
-            usersList.add(user);
-            usersBackup.saveUser(user);
-            usersBackup.saveToUserIndex(user);
+            usersList.put(user.getLogin(), user);
             System.out.println("Account created successfully.");
         }
     }
 
     public void removeUser(String login) {
 
-            usersList.removeIf(user -> user.getLogin().equals(login));
-    }
-
-    public int getSize() {
-        return usersList.size();
+            usersList.remove(login);
     }
 
     public User getUser(String login) {
 
-        User user = new User();
+        return usersList.get(login);
+    }
 
-        for (int i = 0; i < usersList.size(); i++)
-            if ((usersList.get(i).getLogin().equals(login)))
-                user = usersList.get(i);
-
-        return user;
+    public int getSize() {
+        return usersList.size();
     }
 
     public boolean isUserExist(String login) {
@@ -53,19 +44,42 @@ public class UsersList implements Serializable {
             return result;
         }
         else {
-            for (int i = 0; i < usersList.size(); i++) {
-                if (login.equals(usersList.get(i).getLogin())) {
-                    result = true;
-                }
+            if(usersList.containsKey(login)) {
+                result = true;
             }
         }
         return result;
     }
 
     public void showList() {
-        for (int i = 0; i < usersList.size(); i++) {
-            System.out.print("USER " + (i+1) + ": ");
-            System.out.println(usersList.get(i).getLogin() + " (" + usersList.get(i).getPassword() + ")");
+
+        int index = 1;
+
+        Iterator<Map.Entry<String, User>> userIterator = usersList.entrySet().iterator();
+        while(userIterator.hasNext()) {
+            String login = userIterator.next().getKey();
+            System.out.println("USER " + index + ": " + login + " (" +
+                    usersList.get(login).getPassword() + ")");
+            index++;
+        }
+    }
+
+    public void saveUsers() {
+
+        try (var oos = new ObjectOutputStream(new FileOutputStream("usersList.obj"))) {
+            oos.writeObject(usersList);
+        } catch (IOException e) {
+            System.err.println("Error - user not saved");
+        }
+    }
+
+    public void fetchUsers() {
+
+        try (var ois = new ObjectInputStream(new FileInputStream("usersList.obj"))) {
+            Map<String, User> users = (Map<String, User>) ois.readObject();
+            usersList.putAll(users);
+        } catch (IOException | ClassNotFoundException e) {
+            System.err.println("Error - user not fetched");
         }
     }
 }
