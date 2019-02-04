@@ -120,7 +120,7 @@ public class AppQuiz {
                             System.out.println("Good luck!");
 
                             try {
-                                Thread.sleep(3000);
+                                Thread.sleep(5000);
                             } catch (InterruptedException e) {
                                 e.printStackTrace();
                             }
