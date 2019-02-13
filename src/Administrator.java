@@ -4,12 +4,9 @@ public class Administrator {
 
     private String administratorPassword;
     private UsersList usersList;
-    private UserManager userManager;
 
     public Administrator() {
-
         usersList = new UsersList();
-        userManager = new UserManager();
     }
 
     public String getPassword() {return administratorPassword;}
@@ -20,7 +17,7 @@ public class Administrator {
 
         String password;
 
-        try ( var ois = new ObjectInputStream(new FileInputStream("adminPassword.obj")))
+        try (var ois = new ObjectInputStream(new FileInputStream("adminPassword.obj")))
         {
             password = (String) ois.readObject();
             setPassword(password);
@@ -34,7 +31,7 @@ public class Administrator {
 
         setPassword(newPassword);
 
-        try  ( var oos = new ObjectOutputStream(new FileOutputStream("adminPassword.obj")))
+        try  (var oos = new ObjectOutputStream(new FileOutputStream("adminPassword.obj")))
         {
             oos.writeObject(newPassword);
             System.out.println("Password changed.");
@@ -54,8 +51,8 @@ public class Administrator {
 
         if (usersList.isUserExist(login)) {
             usersList.removeUser(login);
-            System.out.println("User " + login + " removed.");
             usersList.saveUsers();
+            System.out.println("User " + login + " removed.");
         } else System.out.println("User does not exist.");
     }
 
