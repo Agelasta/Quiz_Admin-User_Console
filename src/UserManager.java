@@ -57,6 +57,7 @@ public class UserManager {
 
         }
         else System.out.print("User not found.");
+
         return user;
     }
 }

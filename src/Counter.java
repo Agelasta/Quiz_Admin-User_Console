@@ -1,19 +1,23 @@
 public class Counter extends Thread {
 
-    private boolean stopCounter = false;
-
     public void run() {
-        while (!stopCounter) {
-            try {
-                Thread.sleep(10000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            stopCounter = true;
-        }
-    }
 
-    public void setStopCounter(boolean flag) {
-        stopCounter = flag;
+        int x = 10;
+        System.out.print("Left time: ");
+
+        try {
+            while (x > -1) {
+                System.out.print(x + ".. ");
+                x--;
+                Thread.sleep(1000);
+                if (x == -1) {
+                    System.out.println("\n\nToo late... Time's up!\n");
+                    System.out.println("Enter 1, 2, or 3 to continue");
+                }
+                if (Thread.interrupted() || x == -1) break;
+            }
+        } catch (InterruptedException e) {
+            System.out.println();
+        }
     }
 }

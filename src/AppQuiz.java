@@ -32,22 +32,20 @@ public class AppQuiz {
     private static final int CATEGORIES_IN_ROUND = 3;
     private static final int QUESTIONS_IN_CATEGORY = 3;
 
-    public static void main(String[] args) throws IOException {
-
+    static
+    {
         admin.fetchPassword();
         usersList.fetchUsers();
+    }
+
+    public static void main(String[] args) throws IOException {
 
         System.out.println("WELCOME TO OUR QUIZ!");
 
         try {
+            Thread.sleep(800);
+            System.out.println("WE HOPE YOU WILL ENJOY PLAYING WITH US!");
             Thread.sleep(1500);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        System.out.println("WE HOPE YOU WILL ENJOY PLAYING WITH US!");
-
-        try {
-            Thread.sleep(2500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -120,7 +118,7 @@ public class AppQuiz {
                             System.out.println("Good luck!");
 
                             try {
-                                Thread.sleep(5000);
+                                Thread.sleep(3000);
                             } catch (InterruptedException e) {
                                 e.printStackTrace();
                             }
@@ -146,15 +144,12 @@ public class AppQuiz {
 
                                 try {
                                     Thread.sleep(500);
-                                } catch (InterruptedException e) {
-                                    System.err.println("Error");
-                                }
-                                System.out.println("Prepare to answering...\n");
-                                try {
+                                    System.out.println("Prepare to answering...\n");
                                     Thread.sleep(2000);
                                 } catch (InterruptedException e) {
                                     System.err.println("Error");
                                 }
+
 
                                 questionCategory.getQuestionsList().clear();
                                 questionCategory.addQuestionsFromFile();
@@ -178,9 +173,9 @@ public class AppQuiz {
                                     }
                                     while (!(input.equals("1")) && !(input.equals("2")) && !(input.equals("3")));
 
-                                    if (counter.isAlive()) {
+                                    counter.interrupt();
 
-                                        counter.setStopCounter(true);
+                                    if (counter.isAlive()) {
 
                                         if (input.equals(questionCategory.getAnswer())) {
                                             System.out.println("Congratulations! You have scored 1 point.\n");
@@ -189,9 +184,14 @@ public class AppQuiz {
                                             System.out.println("Wrong answer!\n");
                                         }
                                     }
-                                    else System.out.println("Too late... Time's up!\n");
 
                                     questionCategory.remove();
+
+                                    try {
+                                        Thread.sleep(1000);
+                                    } catch (InterruptedException e) {
+                                        System.err.println("Error");
+                                    }
                                 }
 
                                 System.out.println("You scored in total " + currentUser.getScore() + " points.");
@@ -203,9 +203,9 @@ public class AppQuiz {
                                 currentUser.setBestScore(currentUser.getScore());
                             }
 
-                            if (currentUser.getBestEfficiency() < ((double)currentUser.getScore() / (CATEGORIES_IN_ROUND *
+                            if (currentUser.getBestEfficiency() < ((double) currentUser.getScore() / (CATEGORIES_IN_ROUND *
                                     QUESTIONS_IN_CATEGORY)) * 100) {
-                                currentUser.setBestEfficiency(((double)currentUser.getScore() / (CATEGORIES_IN_ROUND *
+                                currentUser.setBestEfficiency(((double) currentUser.getScore() / (CATEGORIES_IN_ROUND *
                                         QUESTIONS_IN_CATEGORY)) * 100);
                             }
 
@@ -346,8 +346,7 @@ public class AppQuiz {
 
                             if (confirmation.equalsIgnoreCase("y")) {
                                 userManager.removeAccount(login);
-                            }
-                            else System.out.println("Your account remains active.");
+                            } else System.out.println("Your account remains active.");
                         }
                     }
                     break;
@@ -422,13 +421,11 @@ public class AppQuiz {
                                     number = Integer.valueOf(bufferedReader.readLine());
                                 }
                                 while (!(number % 5 == 1));
-                            }
-                            catch(NumberFormatException e) {
+                            } catch (NumberFormatException e) {
                                 number = 0;
                             }
                             questionCategory.removeQuestionFromFile(number);
-                        }
-                        else System.out.println("Category not found. Try again.");
+                        } else System.out.println("Category not found. Try again.");
 
                     }
                     break;
@@ -449,8 +446,7 @@ public class AppQuiz {
 
                         if (questionCategory != null) {
                             questionCategory.showQuestions();
-                        }
-                        else {
+                        } else {
                             System.out.println("Category not found. Try again.");
                         }
                     }

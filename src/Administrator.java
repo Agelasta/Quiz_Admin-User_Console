@@ -61,8 +61,9 @@ public class Administrator {
 
     public void showUsers() {
 
-        if (usersList.getSize() > 0)
+        if (usersList.getSize() > 0) {
             usersList.showList();
+        }
         else System.out.println("There is no user registered.");
     }
 }

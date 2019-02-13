@@ -41,6 +41,7 @@ public class QuickPlay {
             }
         }
         System.out.println("You scored in total " + score + " points.");
+
         science.getQuestionsList().clear();
     }
 }
