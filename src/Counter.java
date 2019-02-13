@@ -17,7 +17,7 @@ public class Counter extends Thread {
                 if (Thread.interrupted() || x == -1) break;
             }
         } catch (InterruptedException e) {
-            System.out.println("Error");
+            System.err.println("Error");
         }
     }
 }
