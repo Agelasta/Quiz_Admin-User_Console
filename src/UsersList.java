@@ -18,6 +18,7 @@ public class UsersList implements Serializable {
         }
         else {
             usersList.put(user.getLogin(), user);
+            saveUsers();
             System.out.println("Account created successfully.");
         }
     }
@@ -25,6 +26,7 @@ public class UsersList implements Serializable {
     public void removeUser(String login) {
 
             usersList.remove(login);
+            saveUsers();
     }
 
     public User getUser(String login) {

@@ -4,14 +4,20 @@ public class Administrator {
 
     private String administratorPassword;
     private UsersList usersList;
+    private QuestionCategory questionManager;
 
     public Administrator() {
         usersList = new UsersList();
+        questionManager = new QuestionCategory();
     }
 
-    public String getPassword() {return administratorPassword;}
+    private void setPassword(String password) {administratorPassword = password;}
 
-    public void setPassword(String password) {administratorPassword = password;}
+    public boolean checkPassword(String password) {
+        if(password.equals(administratorPassword))
+            return true;
+        else return false;
+    }
 
     public void fetchPassword() {
 
@@ -27,12 +33,16 @@ public class Administrator {
         }
     }
 
-    public void changePassword(String newPassword) {
+    public void changePassword(BufferedReader bufferedReader) {
 
-        setPassword(newPassword);
+        System.out.println("<< CHANGING PASSWORD >>\n");
+        System.out.println("Please enter new password:");
+        String newPassword;
 
-        try  (var oos = new ObjectOutputStream(new FileOutputStream("adminPassword.obj")))
-        {
+        try (var oos = new ObjectOutputStream(new FileOutputStream("adminPassword.obj"))) {
+
+            newPassword = bufferedReader.readLine();
+            setPassword(newPassword);
             oos.writeObject(newPassword);
             System.out.println("Password changed.");
         }
@@ -41,26 +51,76 @@ public class Administrator {
         }
     }
 
-    public void addUser(String login, String password) {
+    public boolean validateAdmin(BufferedReader bufferedReader) throws IOException {
 
-        usersList.addUser(new User(login, password));
-        usersList.saveUsers();
+        System.out.println("Please enter administrator password:");
+        String password = bufferedReader.readLine();
+        return checkPassword(password);
     }
 
-    public void removeUser(String login) {
+    public void addUser(BufferedReader bufferedReader) {
 
-        if (usersList.isUserExist(login)) {
-            usersList.removeUser(login);
-            usersList.saveUsers();
-            System.out.println("User " + login + " removed.");
-        } else System.out.println("User does not exist.");
+        System.out.println("<< ADDING USER >>\n");
+
+        String login = null;
+        String password = null;
+
+        try {
+            System.out.println("Enter login:");
+            login = bufferedReader.readLine();
+            System.out.println("Enter password:");
+            password = bufferedReader.readLine();
+        } catch (IOException e) {
+            System.err.println("Error while reading data");
+        }
+
+        usersList.addUser(new User(login, password));
+    }
+
+    public void removeUser(BufferedReader bufferedReader) {
+
+        System.out.println("<< REMOVING USER >>\n");
+
+        if (usersList.getSize() == 0) {
+            System.out.println("There is no user registered.");
+        }
+        else {
+
+            System.out.println("Enter login:");
+            String login = null;
+
+            try {
+                login = bufferedReader.readLine();
+            } catch (IOException e) {
+                System.err.println("Error while reading user");
+            }
+
+            if (usersList.isUserExist(login)) {
+                usersList.removeUser(login);
+                System.out.println("User " + login + " removed.");
+            } else System.out.println("User does not exist.");
+        }
     }
 
     public void showUsers() {
+
+        System.out.println("<< USERS LIST >>\n");
 
         if (usersList.getSize() > 0) {
             usersList.showList();
         }
         else System.out.println("There is no user registered.");
+    }
+
+    public void showQuestions(BufferedReader bufferedReader) {
+        questionManager.showQuestions(bufferedReader);
+    }
+
+    public void addQuestion(BufferedReader bufferedReader) {
+        questionManager.saveQuestion(bufferedReader);
+    }
+
+    public void removeQuestion(BufferedReader bufferedReader) {
+        questionManager.removeQuestionFromFile(bufferedReader);
     }
 }

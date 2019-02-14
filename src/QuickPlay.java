@@ -6,11 +6,12 @@ public class QuickPlay {
 
         final int NUMBER_OF_QUESTIONS = 3;
 
+        QuestionCategory questionCategory = new QuestionCategory();
         QuestionCategory music = new Music();
         QuestionCategory science = new Science();
         QuestionCategory movies = new Movies();
 
-        science.getQuestionsList().clear();
+        questionCategory.getQuestionsList().clear();
 
         music.addQuestionsFromFile();
         science.addQuestionsFromFile();
@@ -18,11 +19,15 @@ public class QuickPlay {
 
         int score = 0;
 
+        System.out.println("<< QUICK PLAYING >>\n");
+        System.out.println("This is only a demo of our game with no time limit and no ability to save results.");
+        System.out.println("Register and join our community to gain access to all available features!\n");
+
         for (int i = 0; i < NUMBER_OF_QUESTIONS; i++) {
 
-            science.randomQuestion();
-            String answer = science.getAnswer();
-            science.remove();
+            questionCategory.randomQuestion();
+            String answer = questionCategory.getAnswer();
+            questionCategory.remove();
 
             String input;
 
@@ -42,6 +47,6 @@ public class QuickPlay {
         }
         System.out.println("You scored in total " + score + " points.");
 
-        science.getQuestionsList().clear();
+        questionCategory.getQuestionsList().clear();
     }
 }

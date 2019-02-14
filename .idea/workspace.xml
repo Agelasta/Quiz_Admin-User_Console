@@ -7,7 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83ece40a-5f31-4566-8e8a-ef96d0329076" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/Play.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Play.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/Administrator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/Administrator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/AppQuiz.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/AppQuiz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/Counter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/Counter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/QuestionCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/QuestionCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/QuickPlay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/QuickPlay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/UserManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/UserManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/UsersList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/UsersList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scienceQuestions" beforeDir="false" afterPath="$PROJECT_DIR$/scienceQuestions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Administrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Administrator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppQuiz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Counter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuestionCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuestionCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuickPlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuickPlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UsersList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UsersList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usersList.obj" beforeDir="false" afterPath="$PROJECT_DIR$/usersList.obj" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,23 +36,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/UsersList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="117">
+              <caret line="55" column="28" lean-forward="true" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Counter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -54,6 +63,7 @@
       <find>buffer</find>
       <find>m</find>
       <find>5</find>
+      <find>error</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -62,7 +72,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/QuestionBase/Question.java" />
         <option value="$PROJECT_DIR$/password.txt" />
         <option value="$PROJECT_DIR$/index" />
         <option value="$PROJECT_DIR$/music" />
@@ -107,12 +116,13 @@
         <option value="$PROJECT_DIR$/scienceQuestions.txt" />
         <option value="$PROJECT_DIR$/scienceQuestions" />
         <option value="$PROJECT_DIR$/src/UsersList.java" />
-        <option value="$PROJECT_DIR$/src/QuestionCategory.java" />
         <option value="$PROJECT_DIR$/src/QuickPlay.java" />
-        <option value="$PROJECT_DIR$/src/UserManager.java" />
         <option value="$PROJECT_DIR$/src/AppQuiz.java" />
-        <option value="$PROJECT_DIR$/src/Administrator.java" />
+        <option value="$PROJECT_DIR$/src/Play.java" />
         <option value="$PROJECT_DIR$/src/Counter.java" />
+        <option value="$PROJECT_DIR$/src/Administrator.java" />
+        <option value="$PROJECT_DIR$/src/QuestionCategory.java" />
+        <option value="$PROJECT_DIR$/src/UserManager.java" />
       </list>
     </option>
   </component>
@@ -128,7 +138,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -146,13 +155,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="indexy&#9;PSI&#9;JAVA://QuestionCategory#indexyt" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550066060814" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550153757567" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -230,18 +240,18 @@
       <workItem from="1550017725491" duration="117000" />
       <workItem from="1550053480173" duration="727000" />
       <workItem from="1550054423381" duration="6900000" />
-      <workItem from="1550089643855" duration="1019000" />
+      <workItem from="1550089643855" duration="15009000" />
+      <workItem from="1550146187149" duration="7632000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9452000" />
+    <option name="totallyTimeSpent" value="31074000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="9" y="12" width="1259" height="943" extended-state="1" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2677231" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27189323" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -250,7 +260,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3293124" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3329223" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.57090014" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39927623" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -380,34 +390,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scienceQuestions">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/musicQuestions">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/moviesQuestions">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Movies.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Music.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -422,34 +404,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppQuiz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="789">
-          <caret line="177" column="60" selection-start-line="177" selection-start-column="60" selection-end-line="177" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Administrator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="42" lean-forward="true" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
-          <folding>
-            <element signature="e#152#153#0" expanded="true" />
-            <element signature="e#195#196#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="60" column="1" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CategoryChooser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -457,15 +411,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/QuestionCategory.java">
+    <entry file="file://$PROJECT_DIR$/src/Movies.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-731">
-          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -476,10 +425,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/QuickPlay.java">
+    <entry file="file://$PROJECT_DIR$/src/Question.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="44" column="43" lean-forward="true" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
+        <state relative-caret-position="-595">
+          <caret line="2" column="47" lean-forward="true" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -494,31 +443,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UserManager.java">
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/io/BufferedReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-376">
-          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding>
-            <element signature="e#87#88#0" expanded="true" />
-            <element signature="e#130#131#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="137">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UsersList.java">
+    <entry file="file://$PROJECT_DIR$/questioncategoryQuestions">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppQuiz.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+        <state relative-caret-position="-1955">
+          <caret line="98" column="74" lean-forward="true" selection-start-line="98" selection-start-column="74" selection-end-line="98" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Administrator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Counter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuestionCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-339">
+          <caret line="172" column="40" selection-start-line="172" selection-start-column="40" selection-end-line="172" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Play.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1175">
+          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuickPlay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="23" column="106" selection-start-line="23" selection-start-column="106" selection-end-line="23" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UserManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="156" lean-forward="true" selection-start-line="156" selection-end-line="156" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/moviesQuestions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/musicQuestions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scienceQuestions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/UsersList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="55" column="28" lean-forward="true" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
