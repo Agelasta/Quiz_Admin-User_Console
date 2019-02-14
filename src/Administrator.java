@@ -51,10 +51,17 @@ public class Administrator {
         }
     }
 
-    public boolean validateAdmin(BufferedReader bufferedReader) throws IOException {
+    public boolean validateAdmin(BufferedReader bufferedReader) {
 
-        System.out.println("Please enter administrator password:");
-        String password = bufferedReader.readLine();
+        String password = null;
+
+        try {
+            System.out.println("Please enter administrator password:");
+            password = bufferedReader.readLine();
+        }
+        catch (IOException e) {
+            System.err.println("Error while reading input");
+        }
         return checkPassword(password);
     }
 
@@ -71,7 +78,7 @@ public class Administrator {
             System.out.println("Enter password:");
             password = bufferedReader.readLine();
         } catch (IOException e) {
-            System.err.println("Error while reading data");
+            System.err.println("Error while reading input");
         }
 
         usersList.addUser(new User(login, password));
@@ -92,7 +99,7 @@ public class Administrator {
             try {
                 login = bufferedReader.readLine();
             } catch (IOException e) {
-                System.err.println("Error while reading user");
+                System.err.println("Error while reading input");
             }
 
             if (usersList.isUserExist(login)) {

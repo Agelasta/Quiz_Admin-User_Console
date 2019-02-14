@@ -23,7 +23,7 @@ public class UserManager {
             try {
                 newLogin = bufferedReader.readLine();
             } catch (IOException e) {
-                System.err.println("Error");
+                System.err.println("Error while reading input");
             }
         }
         while (!(Pattern.matches("[^\\s]*[a-zA-Z]+[^\\s]*", newLogin)) || newLogin.length() < 4);
@@ -53,7 +53,7 @@ public class UserManager {
             try {
                 newPassword = bufferedReader.readLine();
             } catch (IOException e) {
-                System.err.println("Error");
+                System.err.println("Error while reading input");
             }
         }
         while (!(Pattern.matches("[^\\s]*[a-zA-Z]+[^\\s]*", newPassword)) || newPassword.length() < 4);
@@ -126,7 +126,7 @@ public class UserManager {
             }
             while (!(Pattern.matches("[^\\s]*[a-zA-Z]+[^\\s]*", password)) || password.length() < 4);
         } catch (IOException e) {
-            System.err.println("Error");
+            System.err.println("Error while reading input");
         }
 
         if (!(usersList.isUserExist(login))) {
@@ -155,12 +155,20 @@ public class UserManager {
         return user;
     }
 
-    public User validateUser(BufferedReader bufferedReader) throws IOException {
+    public User validateUser(BufferedReader bufferedReader) {
 
-        System.out.println("Please enter your login:");
-        String login = bufferedReader.readLine();
-        System.out.println("Please enter your password:");
-        String password = bufferedReader.readLine();
+        String login = null;
+        String password = null;
+
+        try {
+            System.out.println("Please enter your login:");
+            login = bufferedReader.readLine();
+            System.out.println("Please enter your password:");
+            password = bufferedReader.readLine();
+        }
+        catch(IOException e) {
+            System.err.println("Error while reading input");
+        }
         User user = logIn(login, password);
         return user;
     }

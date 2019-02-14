@@ -163,14 +163,14 @@ public class QuestionCategory {
             try (var writer = new FileWriter(questionCategory.getClass().getName().toLowerCase() + "Questions")) {
                 properties.store(writer, questionCategory.getClass().getName().toLowerCase());
             } catch (IOException e) {
-                System.out.println("Question not saved");
+                System.err.println("Question not saved");
             }
 
             System.out.println("Question saved.");
         }
         }
         catch (IOException e) {
-            System.err.println("Error");
+            System.err.println("Unknown error");
         }
     }
 
@@ -182,7 +182,7 @@ public class QuestionCategory {
             properties.load(reader);
             index = Integer.valueOf(properties.getProperty("index"));
         } catch (IOException e) {
-            System.out.println("Error while reading file");
+            System.err.println("Error while reading file");
         }
 
         Set<Map.Entry<Object, Object>> questions = properties.entrySet();
@@ -221,7 +221,7 @@ public class QuestionCategory {
                 properties.load(reader);
                 index = Integer.valueOf(properties.getProperty("index"));
             } catch (IOException e) {
-                System.out.println("Error while reading file");
+                System.err.println("Error while reading file");
             }
 
             showQuestionRemovalList(questionCategory);
@@ -265,7 +265,7 @@ public class QuestionCategory {
                 try (var writer = new FileWriter(questionCategory.getClass().getName().toLowerCase() + "Questions")) {
                     properties.store(writer, "Music");
                 } catch (IOException e) {
-                    System.out.println("Error while removing question");
+                    System.err.println("Error while removing question");
                 }
 
                 System.out.println("Question removed.");

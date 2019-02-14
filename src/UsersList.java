@@ -81,7 +81,7 @@ public class UsersList implements Serializable {
             Map<String, User> users = (Map<String, User>) ois.readObject();
             usersList.putAll(users);
         } catch (IOException | ClassNotFoundException e) {
-            System.err.println("Error - user not fetched");
+            System.err.println("Error - users not fetched");
         }
     }
 }

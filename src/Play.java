@@ -23,7 +23,7 @@ public void play(User user, BufferedReader bufferedReader, String input) {
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            System.err.println("Unknown error");
         }
 
         for (int i = 0; i < CATEGORIES_IN_ROUND; i++) {
@@ -37,7 +37,7 @@ public void play(User user, BufferedReader bufferedReader, String input) {
                 try {
                     input = bufferedReader.readLine();
                 } catch (IOException e) {
-                    System.err.println("Error");
+                    System.err.println("Error while reading input");
                 }
             }
             while (!(input.equals("1")) && !(input.equals("2")) && !(input.equals("3")));
@@ -50,7 +50,7 @@ public void play(User user, BufferedReader bufferedReader, String input) {
                 System.out.println("Prepare to answering...\n");
                 Thread.sleep(2000);
             } catch (InterruptedException e) {
-                System.err.println("Error");
+                System.err.println("Unknown error");
             }
 
 
@@ -71,7 +71,7 @@ public void play(User user, BufferedReader bufferedReader, String input) {
                     try {
                         input = bufferedReader.readLine();
                     } catch (IOException e) {
-                        System.err.println("Error");
+                        System.err.println("Error while reading input");
                     }
                 }
                 while (!(input.equals("1")) && !(input.equals("2")) && !(input.equals("3")));
@@ -93,7 +93,7 @@ public void play(User user, BufferedReader bufferedReader, String input) {
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
-                    System.err.println("Error");
+                    System.err.println("Unknown rror");
                 }
             }
 

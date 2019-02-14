@@ -32,7 +32,7 @@ public class AppQuiz {
         usersList.fetchUsers();
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         System.out.println("WELCOME TO OUR QUIZ!");
 
@@ -41,7 +41,7 @@ public class AppQuiz {
             System.out.println("WE HOPE YOU WILL ENJOY PLAYING WITH US!");
             Thread.sleep(1500);
         } catch (InterruptedException e) {
-            e.printStackTrace();
+            System.err.println("Unknown error");
         }
 
 
@@ -71,7 +71,7 @@ public class AppQuiz {
                 try {
                     input = bufferedReader.readLine();
                 } catch (IOException e) {
-                    System.err.println("Error");
+                    System.err.println("Error while reading input");
                 }
             }
             while (!(input.equals("1")) && !(input.equals("2")) && !(input.equals("3")) && !(input.equals("4"))
