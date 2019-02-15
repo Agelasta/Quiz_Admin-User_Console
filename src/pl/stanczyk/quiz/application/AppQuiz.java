@@ -35,9 +35,7 @@ public class AppQuiz {
     private static final String SHOW_USERS = "13";
     private static final String CHANGE_ADMIN_PASSWORD = "14";
 
-    static {
-        usersList.fetchUsers();
-    }
+    static { usersList.fetchUsers();}
 
     public static void main(String[] args) {
 
@@ -50,7 +48,6 @@ public class AppQuiz {
         } catch (InterruptedException e) {
             System.err.println("Unknown error");
         }
-
 
         do {
             do {
@@ -86,13 +83,11 @@ public class AppQuiz {
                     && !(input.equals("9")) && !(input.equals("10")) && !(input.equals("11")) && !(input.equals("12"))
                     && !(input.equals("13")) && !(input.equals("14")) && !(input.equals("e")));
 
-
             switch (input) {
 
                 case QUICK_PLAY:
 
                     QuickPlay.playQuick();
-
                     break;
 
                 case PLAY:
@@ -111,7 +106,6 @@ public class AppQuiz {
                 case REGISTER:
 
                     userManager.register(bufferedReader);
-
                     break;
 
                 case STATISTICS:

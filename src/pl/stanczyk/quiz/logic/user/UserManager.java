@@ -140,7 +140,6 @@ public class UserManager {
         User user = null;
 
         if (usersList.isUserExist(login)) {
-
             if (usersList.getUser(login).getPassword().equals(password)) {
                 user = usersList.getUser(login);
                 System.out.println("You are logged in, " + login + ".");

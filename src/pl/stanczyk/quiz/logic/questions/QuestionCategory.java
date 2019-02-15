@@ -247,7 +247,6 @@ public class QuestionCategory {
     private void storeQuestion(QuestionCategory questionCategory, Question question) {
 
         var properties = new Properties();
-
         index = readIndex(properties, questionCategory);
 
         properties.setProperty(String.valueOf(index), question.getQuestion());

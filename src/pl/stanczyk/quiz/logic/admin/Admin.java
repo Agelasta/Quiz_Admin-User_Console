@@ -58,7 +58,6 @@ public class Admin implements AdminInterface {
     public boolean validateAdmin(BufferedReader bufferedReader) {
 
         String password = null;
-
         try {
             System.out.println("Please enter administrator password:");
             password = bufferedReader.readLine();
@@ -71,7 +70,6 @@ public class Admin implements AdminInterface {
     public void addUser(BufferedReader bufferedReader) {
 
         System.out.println("<< ADDING USER >>\n");
-
         String login = null;
         String password = null;
 
@@ -83,7 +81,6 @@ public class Admin implements AdminInterface {
         } catch (IOException e) {
             System.err.println("Error while reading input");
         }
-
         usersList.addUser(new User(login, password));
     }
 
@@ -103,7 +100,6 @@ public class Admin implements AdminInterface {
             } catch (IOException e) {
                 System.err.println("Error while reading input");
             }
-
             if (usersList.isUserExist(login)) {
                 usersList.removeUser(login);
                 System.out.println("User " + login + " removed.");
@@ -114,7 +110,6 @@ public class Admin implements AdminInterface {
     public void showUsers() {
 
         System.out.println("<< USERS LIST >>\n");
-
         if (usersList.getSize() > 0) {
             usersList.showList();
         } else System.out.println("There is no user registered.");

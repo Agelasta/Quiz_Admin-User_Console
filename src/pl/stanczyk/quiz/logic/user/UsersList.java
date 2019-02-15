@@ -27,13 +27,11 @@ public class UsersList implements Serializable {
     }
 
     public void removeUser(String login) {
-
         usersList.remove(login);
         saveUsers();
     }
 
     public User getUser(String login) {
-
         return usersList.get(login);
     }
 
@@ -69,7 +67,6 @@ public class UsersList implements Serializable {
     }
 
     public void saveUsers() {
-
         try (var oos = new ObjectOutputStream(new FileOutputStream("usersList.obj"))) {
             oos.writeObject(usersList);
         } catch (IOException e) {
@@ -78,7 +75,6 @@ public class UsersList implements Serializable {
     }
 
     public void fetchUsers() {
-
         try (var ois = new ObjectInputStream(new FileInputStream("usersList.obj"))) {
             Map<String, User> users = (Map<String, User>) ois.readObject();
             usersList.putAll(users);
