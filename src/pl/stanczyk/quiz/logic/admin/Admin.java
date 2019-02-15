@@ -18,22 +18,22 @@ public class Admin implements AdminInterface {
         questionManager = new QuestionCategory();
     }
 
-    private void setPassword(String password) {administratorPassword = password;}
+    private void setPassword(String password) {
+        administratorPassword = password;
+    }
 
     private boolean checkPassword(String password) {
-        if(password.equals(administratorPassword))
+        if (password.equals(administratorPassword))
             return true;
         else return false;
     }
 
     public void fetchPassword() {
 
-        try (var ois = new ObjectInputStream(new FileInputStream("adminPassword.obj")))
-        {
+        try (var ois = new ObjectInputStream(new FileInputStream("adminPassword.obj"))) {
             String password = (String) ois.readObject();
             setPassword(password);
-        }
-        catch (IOException | ClassNotFoundException e) {
+        } catch (IOException | ClassNotFoundException e) {
             System.err.println("Error while reading password");
         }
     }
@@ -42,16 +42,14 @@ public class Admin implements AdminInterface {
 
         System.out.println("<< CHANGING PASSWORD >>\n");
         System.out.println("Please enter new password:");
-        String newPassword;
 
         try (var oos = new ObjectOutputStream(new FileOutputStream("adminPassword.obj"))) {
 
-            newPassword = bufferedReader.readLine();
+            String newPassword = bufferedReader.readLine();
             setPassword(newPassword);
             oos.writeObject(newPassword);
             System.out.println("Password changed.");
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             System.err.println("Error - password not changed");
         }
     }
@@ -64,8 +62,7 @@ public class Admin implements AdminInterface {
         try {
             System.out.println("Please enter administrator password:");
             password = bufferedReader.readLine();
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             System.err.println("Error while reading input");
         }
         return checkPassword(password);
@@ -96,8 +93,7 @@ public class Admin implements AdminInterface {
 
         if (usersList.getSize() == 0) {
             System.out.println("There is no user registered.");
-        }
-        else {
+        } else {
 
             System.out.println("Enter login:");
             String login = null;
@@ -121,8 +117,7 @@ public class Admin implements AdminInterface {
 
         if (usersList.getSize() > 0) {
             usersList.showList();
-        }
-        else System.out.println("There is no user registered.");
+        } else System.out.println("There is no user registered.");
     }
 
     public void showQuestions(BufferedReader bufferedReader) {
@@ -134,6 +129,6 @@ public class Admin implements AdminInterface {
     }
 
     public void removeQuestion(BufferedReader bufferedReader) {
-        questionManager.removeQuestionFromFile(bufferedReader);
+        questionManager.removeQuestion(bufferedReader);
     }
 }

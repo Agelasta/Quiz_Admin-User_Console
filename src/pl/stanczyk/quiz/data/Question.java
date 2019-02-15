@@ -38,11 +38,13 @@ public class Question implements Serializable {
         }
 
         public Builder pointer(int pointer) {
-           this.pointer = pointer;
+            this.pointer = pointer;
             return this;
         }
 
-        public Question build() {return new Question(this);}
+        public Question build() {
+            return new Question(this);
+        }
     }
 
     private Question(Builder builder) {
@@ -54,13 +56,11 @@ public class Question implements Serializable {
     }
 
 
-    public Question() {
-
-    }
+    public Question() {}
 
     public String getQuestion() {
         return question;
-}
+    }
 
     public void setQuestion(String question) {
         this.question = question;

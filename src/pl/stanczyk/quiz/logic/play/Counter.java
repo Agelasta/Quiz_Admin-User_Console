@@ -19,7 +19,7 @@ public class Counter extends Thread {
                 if (Thread.interrupted() || x == -1) break;
             }
         } catch (InterruptedException e) {
-            System.err.println("");
+            System.err.println(" ");
         }
     }
 }

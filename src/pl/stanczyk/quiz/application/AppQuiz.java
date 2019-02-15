@@ -35,8 +35,7 @@ public class AppQuiz {
     private static final String SHOW_USERS = "13";
     private static final String CHANGE_ADMIN_PASSWORD = "14";
 
-    static
-    {
+    static {
         usersList.fetchUsers();
     }
 
@@ -101,7 +100,7 @@ public class AppQuiz {
                     if (usersList.getSize() == 0) {
                         System.out.println("This option is available only for registered users. Please register first.");
                     } else {
-                        if((currentUser = userManager.validateUser(bufferedReader)) == null) {
+                        if ((currentUser = userManager.validateUser(bufferedReader)) == null) {
                             System.out.println(" Try again.");
                         } else {
                             play.play(currentUser, bufferedReader, input);
@@ -120,7 +119,7 @@ public class AppQuiz {
                     if (usersList.getSize() == 0) {
                         System.out.println("There is no user registered. Please register first.");
                     } else {
-                        if((currentUser = userManager.validateUser(bufferedReader)) == null) {
+                        if ((currentUser = userManager.validateUser(bufferedReader)) == null) {
                             System.out.println(" Try again.");
                         } else {
                             userManager.showStatistics(currentUser);
@@ -132,8 +131,8 @@ public class AppQuiz {
 
                     if (usersList.getSize() == 0) {
                         System.out.println("There is no user registered. Please register first.");
-                    }  else {
-                        if((currentUser = userManager.validateUser(bufferedReader)) == null) {
+                    } else {
+                        if ((currentUser = userManager.validateUser(bufferedReader)) == null) {
                             System.out.println(" Try again.");
                         } else {
                             userManager.changeLogin(currentUser, bufferedReader);
@@ -146,7 +145,7 @@ public class AppQuiz {
                     if (usersList.getSize() == 0) {
                         System.out.println("There is no user registered. Please register first.");
                     } else {
-                        if((currentUser = userManager.validateUser(bufferedReader)) == null) {
+                        if ((currentUser = userManager.validateUser(bufferedReader)) == null) {
                             System.out.println(" Try again.");
                         } else {
                             userManager.changePassword(currentUser, bufferedReader);
@@ -159,7 +158,7 @@ public class AppQuiz {
                     if (usersList.getSize() == 0) {
                         System.out.println("There is no user registered.");
                     } else {
-                        if((currentUser = userManager.validateUser(bufferedReader)) == null) {
+                        if ((currentUser = userManager.validateUser(bufferedReader)) == null) {
                             System.out.println(" Try again.");
                         } else {
                             userManager.removeAccount(currentUser, bufferedReader);

@@ -8,47 +8,27 @@
   <component name="ChangeListManager">
     <list default="true" id="83ece40a-5f31-4566-8e8a-ef96d0329076" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/moviesQuestions" beforeDir="false" afterPath="$PROJECT_DIR$/moviesQuestions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicQuestions" beforeDir="false" afterPath="$PROJECT_DIR$/musicQuestions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/Admin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/AdminInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/AdminProxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/AppQuiz.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/CategoryChooser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/Counter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/Movies.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/Music.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/Play.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/Question$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/Question$Builder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/Question.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/QuestionCategory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/QuestionGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/QuickPlay.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/Science.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/UserManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/UsersList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/pl/stanczyk/quiz/application/AppQuiz.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/pl/stanczyk/quiz/application/AppQuiz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/pl/stanczyk/quiz/data/Question$Builder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/pl/stanczyk/quiz/data/Question$Builder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/pl/stanczyk/quiz/data/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/pl/stanczyk/quiz/data/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/pl/stanczyk/quiz/data/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/pl/stanczyk/quiz/data/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/pl/stanczyk/quiz/logic/admin/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/pl/stanczyk/quiz/logic/admin/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/pl/stanczyk/quiz/logic/play/Counter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/pl/stanczyk/quiz/logic/play/Counter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/pl/stanczyk/quiz/logic/play/Play.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/pl/stanczyk/quiz/logic/play/Play.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/pl/stanczyk/quiz/logic/questions/QuestionCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/pl/stanczyk/quiz/logic/questions/QuestionCategory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/pl/stanczyk/quiz/logic/user/UserManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/pl/stanczyk/quiz/logic/user/UserManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/QuizNoGUI/pl/stanczyk/quiz/logic/user/UsersList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/QuizNoGUI/pl/stanczyk/quiz/logic/user/UsersList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scienceQuestions" beforeDir="false" afterPath="$PROJECT_DIR$/scienceQuestions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/admin/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/interfaces/AdminInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/admin/AdminProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/application/AppQuiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CategoryChooser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/CategoryChooser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/Counter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Movies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/Movies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/Music.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/Play.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/data/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QuestionCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/QuestionCategory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QuestionGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/QuestionGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QuickPlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/QuickPlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Science.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/Science.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/data/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UsersList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UsersList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/stanczyk/quiz/application/AppQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/application/AppQuiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/stanczyk/quiz/data/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/data/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/stanczyk/quiz/data/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/data/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/stanczyk/quiz/interfaces/AdminInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/interfaces/AdminInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/admin/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/admin/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/Counter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/Play.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/QuestionCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/QuestionCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UserManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UsersList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UsersList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usersList.obj" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -58,6 +38,20 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="hideWarnings" value="true" />
     <option name="HIDE_WARNINGS" value="true" />
@@ -65,10 +59,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/admin/Admin.java">
+        <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UsersList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1785">
-              <caret line="110" column="47" selection-start-line="110" selection-start-column="47" selection-end-line="110" selection-end-column="47" />
+            <state relative-caret-position="66">
+              <caret line="85" column="60" selection-start-line="85" selection-start-column="60" selection-end-line="85" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -77,25 +71,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UsersList.java">
+        <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/data/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="67" column="62" selection-start-line="66" selection-start-column="70" selection-end-line="67" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UserManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1768">
-              <caret line="110" column="31" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="101">
+              <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -131,8 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Main/CounterTask.java" />
-        <option value="$PROJECT_DIR$/src/Main/Tred.java" />
         <option value="$PROJECT_DIR$/src/Main/Counter.java" />
         <option value="$PROJECT_DIR$/src/QuestionBase/MusicCategory.java" />
         <option value="$PROJECT_DIR$/src/QuestionBase/Music.java" />
@@ -164,23 +141,25 @@
         <option value="$PROJECT_DIR$/src/AppQuiz.java" />
         <option value="$PROJECT_DIR$/src/AdminProxy.java" />
         <option value="$PROJECT_DIR$/src/AdminInterface.java" />
-        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/data/Question.java" />
         <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/UsersList.java" />
         <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/Question/CategoryChooser.java" />
-        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/application/AppQuiz.java" />
         <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/User/UsersList.java" />
         <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/Admin/Admin.java" />
         <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/Question/QuestionCategory.java" />
         <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/question/QuestionCategory.java" />
-        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/data/User.java" />
-        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UserManager.java" />
         <option value="$PROJECT_DIR$/moviesQuestions" />
         <option value="$PROJECT_DIR$/musicQuestions" />
         <option value="$PROJECT_DIR$/scienceQuestions" />
-        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/QuestionCategory.java" />
-        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/Play.java" />
-        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/admin/Admin.java" />
         <option value="$PROJECT_DIR$/usersList.obj" />
+        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/application/AppQuiz.java" />
+        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/data/Question.java" />
+        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/data/User.java" />
+        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/interfaces/AdminInterface.java" />
+        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/admin/Admin.java" />
+        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/Play.java" />
+        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/Counter.java" />
+        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UserManager.java" />
+        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/QuestionCategory.java" />
         <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UsersList.java" />
       </list>
     </option>
@@ -217,21 +196,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="quiz" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Quiz_Admin-User_Console" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Quiz_Admin-User_Console" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="quiz" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Quiz_Admin-User_Console" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Quiz_Admin-User_Console" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="quiz" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -242,7 +206,8 @@
     <property name="SearchEverywhereHistoryKey" value="indexy&#9;PSI&#9;JAVA://QuestionCategory#indexyt" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550246069634" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550254351478" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/Wzorce-Pełnomocnik" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -330,15 +295,15 @@
       <workItem from="1550089643855" duration="15009000" />
       <workItem from="1550146187149" duration="18115000" />
       <workItem from="1550228976082" duration="9894000" />
-      <workItem from="1550243711498" duration="1285000" />
+      <workItem from="1550243711498" duration="9790000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52736000" />
+    <option name="totallyTimeSpent" value="61241000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="12" width="1259" height="943" extended-state="0" />
+    <frame x="9" y="12" width="1259" height="943" extended-state="1" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22101751" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -349,7 +314,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292232" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.594328" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.6078915" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39927623" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -368,8 +333,8 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven" order="8" />
-      <window_info anchor="right" id="Database" order="9" />
+      <window_info anchor="right" id="Database" order="8" weight="0.3294412" />
+      <window_info anchor="right" id="Maven" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,20 +370,6 @@
     <entry file="file://$PROJECT_DIR$/questioncategoryQuestions" />
     <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/application.java" />
     <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic.java" />
-    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/data/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/interfaces/AdminInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/User/usersList.obj" />
     <entry file="file://$PROJECT_DIR$/src/usersList.obj" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/io/ObjectStreamClass.java">
@@ -473,27 +424,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/scienceQuestions" />
     <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/musicQuestions" />
-    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/application/AppQuiz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/data/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/Science.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/Music.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -508,17 +438,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/CategoryChooser.java">
+    <entry file="file://$PROJECT_DIR$/adminPassword.obj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="66" selection-start-line="4" selection-start-column="66" selection-end-line="4" selection-end-column="66" />
+        <state>
+          <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/QuestionGenerator.java">
+    <entry file="file://$PROJECT_DIR$/usersList.obj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="17">
+          <caret line="1" column="69" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/Science.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/admin/AdminProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -543,78 +490,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/QuestionCategory.java">
+    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/application/AppQuiz.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="271" column="84" lean-forward="true" selection-start-line="271" selection-start-column="84" selection-end-line="271" selection-end-column="84" />
+        <state relative-caret-position="2839">
+          <caret line="167" lean-forward="true" selection-start-line="167" selection-end-line="167" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/Counter.java">
+    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/data/Question.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="1003">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#1081#1082#0" expanded="true" />
+            <element signature="e#1130#1131#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/QuickPlay.java">
+    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/interfaces/AdminInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/Play.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="102" column="56" lean-forward="true" selection-start-line="102" selection-start-column="56" selection-end-line="102" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/admin/AdminProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminPassword.obj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usersList.obj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="69" selection-start-line="1" selection-start-column="69" selection-end-line="1" selection-end-column="69" />
+          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/admin/Admin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="110" column="47" selection-start-line="110" selection-start-column="47" selection-end-line="110" selection-end-column="47" />
+        <state relative-caret-position="187">
+          <caret line="117" column="38" lean-forward="true" selection-start-line="117" selection-start-column="38" selection-end-line="117" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#4002#4003#0" expanded="true" />
+            <element signature="e#4064#4065#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/QuickPlay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/Counter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/Play.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1088">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/CategoryChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/QuestionGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UserManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="110" column="31" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
+        <state relative-caret-position="442">
+          <caret line="28" column="49" lean-forward="true" selection-start-line="28" selection-start-column="49" selection-end-line="28" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/QuestionCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="93" column="9" lean-forward="true" selection-start-line="93" selection-start-column="9" selection-end-line="93" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -623,11 +592,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UsersList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="67" column="62" selection-start-line="66" selection-start-column="70" selection-end-line="67" selection-end-column="62" />
+        <state relative-caret-position="66">
+          <caret line="85" column="60" selection-start-line="85" selection-start-column="60" selection-end-line="85" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/data/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
         </state>
       </provider>
     </entry>

@@ -17,21 +17,9 @@ public class UserManager {
     public void changeLogin(User user, BufferedReader bufferedReader) {
 
         System.out.println("\n<< CHANGING LOGIN >>\n");
-        String newLogin = null;
         String oldLogin = user.getLogin();
-
-        do {
-            System.out.println("Please enter new login:");
-            System.out.println("(login must contain at least 1 letter, not contain any whitespace " +
-                    "and have at least 4 characters length)");
-            try {
-                newLogin = bufferedReader.readLine();
-            } catch (IOException e) {
-                System.err.println("Error while reading input");
-            }
-        }
-        while (!(Pattern.matches("[^\\s]*[a-zA-Z]+[^\\s]*", newLogin)) || newLogin.length() < 4);
-
+        System.out.println("Please enter new login:");
+        String newLogin = readLoginFromUser(bufferedReader);
 
         if (!(usersList.isUserExist(newLogin))) {
             user.setLogin(newLogin);
@@ -44,14 +32,40 @@ public class UserManager {
         }
     }
 
+    private String readLoginFromUser(BufferedReader bufferedReader) {
+
+        String newLogin = null;
+
+        do {
+            System.out.println("(login must contain at least 1 letter, not contain any whitespace " +
+                    "and have at least 4 characters length)");
+            try {
+                newLogin = bufferedReader.readLine();
+            } catch (IOException e) {
+                System.err.println("Error while reading input");
+            }
+        }
+        while (!(Pattern.matches("[^\\s]*[a-zA-Z]+[^\\s]*", newLogin)) || newLogin.length() < 4);
+        return newLogin;
+    }
+
 
     public void changePassword(User user, BufferedReader bufferedReader) {
 
         System.out.println("\n<< CHANGING PASSWORD >>\n");
+        System.out.println("Please enter new password:");
+        String newPassword = readPasswordFromUser(bufferedReader);
+
+        user.setPassword(newPassword);
+        usersList.saveUsers();
+        System.out.println("Password changed.");
+    }
+
+    private String readPasswordFromUser(BufferedReader bufferedReader) {
+
         String newPassword = null;
 
         do {
-            System.out.println("Please enter new password:");
             System.out.println("(password must contain at least 1 letter, not contain any whitespace " +
                     "and have at least 4 characters length)");
             try {
@@ -62,9 +76,7 @@ public class UserManager {
         }
         while (!(Pattern.matches("[^\\s]*[a-zA-Z]+[^\\s]*", newPassword)) || newPassword.length() < 4);
 
-        user.setPassword(newPassword);
-        usersList.saveUsers();
-        System.out.println("Password changed.");
+        return newPassword;
     }
 
     public void removeAccount(User user, BufferedReader bufferedReader) {
@@ -107,34 +119,14 @@ public class UserManager {
 
     public void register(BufferedReader bufferedReader) {
 
-        String login = null;
-        String password = null;
-
         System.out.println("<< REGISTERING >>\n");
 
-        try {
-            do {
                 System.out.println("Please create login:");
-                System.out.println("(login must contain at least 1 letter, not contain any whitespace " +
-                        "and have at least 4 characters length)");
-
-                login = bufferedReader.readLine();
-            }
-            while (!(Pattern.matches("[^\\s]*[a-zA-Z]+[^\\s]*", login)) || login.length() < 4);
-
-            do {
+                String login = readLoginFromUser(bufferedReader);
                 System.out.println("Please create password:");
-                System.out.println("(password must contain at least 1 letter, not contain any whitespace " +
-                        "and have at least 4 characters length)");
-                password = bufferedReader.readLine();
-            }
-            while (!(Pattern.matches("[^\\s]*[a-zA-Z]+[^\\s]*", password)) || password.length() < 4);
-        } catch (IOException e) {
-            System.err.println("Error while reading input");
-        }
+                String password = readPasswordFromUser(bufferedReader);
 
         if (!(usersList.isUserExist(login))) {
-
             User user = new User(login, password);
             usersList.addUser(user);
         } else {

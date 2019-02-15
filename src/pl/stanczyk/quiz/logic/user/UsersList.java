@@ -11,7 +11,7 @@ public class UsersList implements Serializable {
 
     private static Map<String, User> usersList = new TreeMap<>();
 
-    public static Map<String, User> getUsersList() {
+    public Map<String, User> getUsersList() {
         return usersList;
     }
 
@@ -19,8 +19,7 @@ public class UsersList implements Serializable {
 
         if (isUserExist(user.getLogin())) {
             System.out.println("User " + user.getLogin() + " already exists.");
-        }
-        else {
+        } else {
             usersList.put(user.getLogin(), user);
             saveUsers();
             System.out.println("Account created successfully.");
@@ -29,8 +28,8 @@ public class UsersList implements Serializable {
 
     public void removeUser(String login) {
 
-            usersList.remove(login);
-            saveUsers();
+        usersList.remove(login);
+        saveUsers();
     }
 
     public User getUser(String login) {
@@ -48,13 +47,12 @@ public class UsersList implements Serializable {
 
         if (usersList.size() == 0) {
             return result;
-        }
-        else {
-            if(usersList.containsKey(login)) {
+        } else {
+            if (usersList.containsKey(login)) {
                 result = true;
             }
+            return result;
         }
-        return result;
     }
 
     public void showList() {
@@ -62,7 +60,7 @@ public class UsersList implements Serializable {
         int index = 1;
 
         Iterator<Map.Entry<String, User>> userIterator = usersList.entrySet().iterator();
-        while(userIterator.hasNext()) {
+        while (userIterator.hasNext()) {
             String login = userIterator.next().getKey();
             System.out.println("USER " + index + ": " + login + " (" +
                     usersList.get(login).getPassword() + ")");
@@ -86,7 +84,6 @@ public class UsersList implements Serializable {
             usersList.putAll(users);
         } catch (IOException | ClassNotFoundException e) {
             System.err.println("Error - users not fetched");
-            e.printStackTrace();
         }
     }
 }
