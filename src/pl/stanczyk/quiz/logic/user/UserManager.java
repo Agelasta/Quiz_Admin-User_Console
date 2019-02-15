@@ -135,7 +135,7 @@ public class UserManager {
     }
 
 
-    public User logIn(String login, String password) {
+    private User logIn(String login, String password) {
 
         User user = null;
 

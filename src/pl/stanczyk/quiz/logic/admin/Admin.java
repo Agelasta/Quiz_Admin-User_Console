@@ -29,7 +29,6 @@ public class Admin implements AdminInterface {
     }
 
     public void fetchPassword() {
-
         try (var ois = new ObjectInputStream(new FileInputStream("adminPassword.obj"))) {
             String password = (String) ois.readObject();
             setPassword(password);
@@ -44,7 +43,6 @@ public class Admin implements AdminInterface {
         System.out.println("Please enter new password:");
 
         try (var oos = new ObjectOutputStream(new FileOutputStream("adminPassword.obj"))) {
-
             String newPassword = bufferedReader.readLine();
             setPassword(newPassword);
             oos.writeObject(newPassword);

@@ -15,8 +15,6 @@ public class Play {
 
     public void play(User user, BufferedReader bufferedReader, String input) {
 
-        UsersList usersList = new UsersList();
-
         System.out.println("\n<< PLAYER ROUND >>");
 
         if (user == null) {
@@ -40,7 +38,7 @@ public class Play {
             setBestEfficiency(user);
             user.setScore(0);
 
-            usersList.saveUsers();
+            new UsersList().saveUsers();
         }
     }
 

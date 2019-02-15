@@ -42,7 +42,6 @@ public class UsersList implements Serializable {
     public boolean isUserExist(String login) {
 
         boolean result = false;
-
         if (usersList.size() == 0) {
             return result;
         } else {

@@ -7,9 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83ece40a-5f31-4566-8e8a-ef96d0329076" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/pl/stanczyk/quiz/application/AppQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/application/AppQuiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/admin/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/admin/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/QuestionCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/QuestionCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/Play.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UserManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UsersList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UsersList.java" afterDir="false" />
     </list>
@@ -43,8 +43,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/application/AppQuiz.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1580">
+            <state relative-caret-position="1802">
               <caret line="106" selection-start-line="106" selection-end-line="106" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/QuestionCategory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4471">
+              <caret line="269" column="13" lean-forward="true" selection-start-line="269" selection-start-column="13" selection-end-line="269" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,13 +139,13 @@
         <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/data/Question.java" />
         <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/data/User.java" />
         <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/interfaces/AdminInterface.java" />
-        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/Play.java" />
         <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/Counter.java" />
+        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/QuestionCategory.java" />
+        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/application/AppQuiz.java" />
         <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UsersList.java" />
         <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UserManager.java" />
-        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/QuestionCategory.java" />
+        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/Play.java" />
         <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/admin/Admin.java" />
-        <option value="$PROJECT_DIR$/src/pl/stanczyk/quiz/application/AppQuiz.java" />
       </list>
     </option>
   </component>
@@ -179,9 +191,9 @@
     <property name="SearchEverywhereHistoryKey" value="indexy&#9;PSI&#9;JAVA://QuestionCategory#indexyt" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550254952479" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550265041533" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/Wzorce-Pełnomocnik" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Budget_Manager_MVC" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -268,17 +280,18 @@
       <workItem from="1550089643855" duration="15009000" />
       <workItem from="1550146187149" duration="18115000" />
       <workItem from="1550228976082" duration="9894000" />
-      <workItem from="1550243711498" duration="10506000" />
+      <workItem from="1550243711498" duration="11213000" />
+      <workItem from="1550270894523" duration="639000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61957000" />
+    <option name="totallyTimeSpent" value="63303000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="12" width="1259" height="943" extended-state="1" />
+    <frame x="9" y="12" width="1259" height="943" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22101751" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22435363" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -287,7 +300,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292232" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.12577066" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.17755857" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39927623" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -460,42 +473,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UsersList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="56" column="8" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#886#887#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UserManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="141" column="43" lean-forward="true" selection-start-line="141" selection-start-column="43" selection-end-line="141" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/QuestionGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/QuestionCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="248" column="42" selection-start-line="248" selection-start-column="42" selection-end-line="248" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -513,53 +494,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/admin/AdminProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/Play.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-867">
-          <caret line="15" column="78" lean-forward="true" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/interfaces/AdminInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/admin/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="59" column="31" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/data/Question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
-          <folding>
-            <element signature="e#1081#1082#0" expanded="true" />
-            <element signature="e#1130#1131#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -570,9 +508,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UsersList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/user/UserManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2822">
+          <caret line="168" column="5" lean-forward="true" selection-start-line="168" selection-start-column="5" selection-end-line="168" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/play/Play.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/admin/AdminProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/admin/Admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-986">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/data/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#1081#1082#0" expanded="true" />
+            <element signature="e#1130#1131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/logic/questions/QuestionCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4471">
+          <caret line="269" column="13" lean-forward="true" selection-start-line="269" selection-start-column="13" selection-end-line="269" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/pl/stanczyk/quiz/application/AppQuiz.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1580">
+        <state relative-caret-position="1802">
           <caret line="106" selection-start-line="106" selection-end-line="106" />
           <folding>
             <element signature="imports" expanded="true" />
