@@ -1,19 +1,19 @@
 import java.io.*;
 
-public class Administrator {
+public class Admin implements AdminInterface {
 
     private String administratorPassword;
     private UsersList usersList;
     private QuestionCategory questionManager;
 
-    public Administrator() {
+    public Admin() {
         usersList = new UsersList();
         questionManager = new QuestionCategory();
     }
 
     private void setPassword(String password) {administratorPassword = password;}
 
-    public boolean checkPassword(String password) {
+    private boolean checkPassword(String password) {
         if(password.equals(administratorPassword))
             return true;
         else return false;
@@ -21,11 +21,9 @@ public class Administrator {
 
     public void fetchPassword() {
 
-        String password;
-
         try (var ois = new ObjectInputStream(new FileInputStream("adminPassword.obj")))
         {
-            password = (String) ois.readObject();
+            String password = (String) ois.readObject();
             setPassword(password);
         }
         catch (IOException | ClassNotFoundException e) {
@@ -51,6 +49,7 @@ public class Administrator {
         }
     }
 
+    @Override
     public boolean validateAdmin(BufferedReader bufferedReader) {
 
         String password = null;

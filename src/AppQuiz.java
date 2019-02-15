@@ -1,11 +1,9 @@
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.IOException;
+import java.io.*;
 
 public class AppQuiz {
 
-    private final static BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-    private static Administrator admin = new Administrator();
+    private static BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+    private static AdminProxy adminProxy = new AdminProxy();
     private static UserManager userManager = new UserManager();
     private static UsersList usersList = new UsersList();
     private static Play play = new Play();
@@ -27,8 +25,8 @@ public class AppQuiz {
     private static final String SHOW_USERS = "13";
     private static final String CHANGE_ADMIN_PASSWORD = "14";
 
-    static {
-        admin.fetchPassword();
+    static
+    {
         usersList.fetchUsers();
     }
 
@@ -50,7 +48,7 @@ public class AppQuiz {
 
                 System.out.print("\n---- PLAYER MENU ----");
                 System.out.println("           -- ADMINISTRATOR MENU --");
-                System.out.println("");
+                System.out.println(" ");
                 System.out.print("1 - QUICK PLAY");
                 System.out.println("                   8 - ADD QUESTION");
                 System.out.print("2 - PLAY");
@@ -161,64 +159,64 @@ public class AppQuiz {
 
                 case ADD_QUESTION:
 
-                    if (!admin.validateAdmin(bufferedReader)) {
+                    if (!adminProxy.validateAdmin(bufferedReader)) {
                         System.out.println("Password is not correct.");
                     } else {
-                        admin.addQuestion(bufferedReader);
+                        new Admin().addQuestion(bufferedReader);
                     }
                     break;
 
                 case REMOVE_QUESTION:
 
-                    if (!admin.validateAdmin(bufferedReader)) {
+                    if (!adminProxy.validateAdmin(bufferedReader)) {
                         System.out.println("Password is not correct.");
                     } else {
-                        admin.removeQuestion(bufferedReader);
+                        new Admin().removeQuestion(bufferedReader);
                     }
                     break;
 
                 case SHOW_QUESTIONS:
 
-                    if (!admin.validateAdmin(bufferedReader)) {
+                    if (!adminProxy.validateAdmin(bufferedReader)) {
                         System.out.println("Password is not correct.");
                     } else {
-                        admin.showQuestions(bufferedReader);
+                        new Admin().showQuestions(bufferedReader);
                     }
                     break;
 
                 case ADD_USER:
 
-                    if (!admin.validateAdmin(bufferedReader)) {
+                    if (!adminProxy.validateAdmin(bufferedReader)) {
                         System.out.println("Password is not correct.");
                     } else {
-                        admin.addUser(bufferedReader);
+                        new Admin().addUser(bufferedReader);
                     }
                     break;
 
                 case REMOVE_USER:
 
-                    if (!admin.validateAdmin(bufferedReader)) {
+                    if (!adminProxy.validateAdmin(bufferedReader)) {
                         System.out.println("Password is not correct.");
                     } else {
-                        admin.removeUser(bufferedReader);
+                        new Admin().removeUser(bufferedReader);
                     }
                     break;
 
                 case SHOW_USERS:
 
-                    if (!admin.validateAdmin(bufferedReader)) {
+                    if (!adminProxy.validateAdmin(bufferedReader)) {
                         System.out.println("Password is not correct.");
                     } else {
-                        admin.showUsers();
+                        new Admin().showUsers();
                     }
                     break;
 
                 case CHANGE_ADMIN_PASSWORD:
 
-                    if (!admin.validateAdmin(bufferedReader)) {
+                    if (!adminProxy.validateAdmin(bufferedReader)) {
                         System.out.println("Password is not correct.");
                     } else {
-                        admin.changePassword(bufferedReader);
+                        new Admin().changePassword(bufferedReader);
                     }
                     break;
             }
