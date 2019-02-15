@@ -269,7 +269,7 @@ public class QuestionCategory {
                 properties.setProperty("index", String.valueOf(index - SINGLE_QUESTION_VOLUME));
 
                 try (var writer = new FileWriter(questionCategory.getClass().getName().toLowerCase().substring(33) + "Questions")) {
-                    properties.store(writer, questionCategory.getClass().getName());
+                    properties.store(writer, questionCategory.getClass().getName().substring(33));
                 } catch (IOException e) {
                     System.err.println("Error while removing question");
                 }
