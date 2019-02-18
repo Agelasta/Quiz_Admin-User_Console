@@ -145,16 +145,9 @@ public class QuestionCategory {
 
     private void updateQuestionsNumbers(Properties properties) {
 
-        Set<Map.Entry<Object, Object>> questions = properties.entrySet();
-
-        for (Map.Entry<Object, Object> object2 : questions) {
-            String key = (String) object2.getKey();
-            String value = (String) object2.getValue();
-
-            if (!(key.equals("index")) && Integer.valueOf(key) > number) {
-                properties.setProperty(String.valueOf(Integer.valueOf(key) - SINGLE_QUESTION_VOLUME), value);
-                properties.remove(key);
-            }
+        for (int i = number + SINGLE_QUESTION_VOLUME; i < index; i++) {
+            properties.setProperty(String.valueOf(i - SINGLE_QUESTION_VOLUME), properties.getProperty(String.valueOf(i)));
+            properties.remove(String.valueOf(i));
         }
     }
 
