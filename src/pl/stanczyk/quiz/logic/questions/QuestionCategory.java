@@ -99,14 +99,8 @@ public class QuestionCategory {
         var properties = new Properties();
         index = readIndex(properties, questionCategory);
 
-        Set<Map.Entry<Object, Object>> questions = properties.entrySet();
-
-        for (Map.Entry<Object, Object> object : questions) {
-            String key = (String) object.getKey();
-            String value = (String) object.getValue();
-            if (!(key.equals("index")) && (Integer.valueOf(key) % SINGLE_QUESTION_VOLUME == 1)) {
-                System.out.println(key + ": " + value);
-            }
+        for (int i = 1; i < index; i = i + SINGLE_QUESTION_VOLUME) {
+            System.out.println(i + ": " + properties.getProperty(String.valueOf(i)));
         }
     }
 
@@ -144,7 +138,6 @@ public class QuestionCategory {
     }
 
     private void updateQuestionsNumbers(Properties properties) {
-
         for (int i = number + SINGLE_QUESTION_VOLUME; i < index; i++) {
             properties.setProperty(String.valueOf(i - SINGLE_QUESTION_VOLUME), properties.getProperty(String.valueOf(i)));
             properties.remove(String.valueOf(i));
@@ -190,21 +183,16 @@ public class QuestionCategory {
 
     private void printQuestions(Properties properties) {
 
-        Set<Map.Entry<Object, Object>> questions = properties.entrySet();
         int counter = 1;
 
-        for (Map.Entry<Object, Object> object : questions) {
-            String key = (String) object.getKey();
-            String value = (String) object.getValue();
-            if (!(key.equals("index")) && (Integer.valueOf(key) % SINGLE_QUESTION_VOLUME == 1)) {
-                System.out.println(counter + ": " + value);
-                System.out.println("1) " + properties.getProperty(String.valueOf(Integer.valueOf(key) + 1)));
-                System.out.println("2) " + properties.getProperty(String.valueOf(Integer.valueOf(key) + 2)));
-                System.out.println("3) " + properties.getProperty(String.valueOf(Integer.valueOf(key) + 3)));
-                System.out.println("ANSWER: " + properties.getProperty(String.valueOf(Integer.valueOf(key) + 4)));
-                System.out.println("");
-                counter++;
-            }
+        for (int i = 1; i < index; i = i + SINGLE_QUESTION_VOLUME) {
+            System.out.println(counter + ": " + properties.getProperty(String.valueOf(i)));
+            System.out.println("1) " + properties.getProperty(String.valueOf(i + 1)));
+            System.out.println("2) " + properties.getProperty(String.valueOf(i + 2)));
+            System.out.println("3) " + properties.getProperty(String.valueOf(i + 3)));
+            System.out.println("ANSWER: " + properties.getProperty(String.valueOf(i + 4)));
+            System.out.println("");
+            counter++;
         }
     }
 
@@ -217,7 +205,7 @@ public class QuestionCategory {
         String pointer = null;
 
         try {
-            System.out.println("Enter Question:");
+            System.out.println("Enter question:");
             quest = bufferedReader.readLine();
             System.out.println("Enter option1:");
             option1 = bufferedReader.readLine();
