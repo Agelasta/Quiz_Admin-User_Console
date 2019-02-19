@@ -52,9 +52,13 @@ public class QuestionCategory {
             System.out.println("<< QUESTIONS LIST >>\n");
 
             var properties = new Properties();
-            index = readIndex(properties, questionCategory);
-            printQuestions(properties);
-            System.out.println("Number of questions: " + index / SINGLE_QUESTION_VOLUME + "\n");
+            if((index = readIndex(properties, questionCategory)) == 1) {
+                System.out.println("No questions in category.");
+            }
+            else {
+                printQuestions(properties);
+                System.out.println("Number of questions: " + index / SINGLE_QUESTION_VOLUME + "\n");
+            }
         }
     }
 
@@ -99,8 +103,13 @@ public class QuestionCategory {
         var properties = new Properties();
         index = readIndex(properties, questionCategory);
 
-        for (int i = 1; i < index; i = i + SINGLE_QUESTION_VOLUME) {
-            System.out.println(i + ": " + properties.getProperty(String.valueOf(i)));
+        if((index = readIndex(properties, questionCategory)) == 1) {
+            System.out.println("No questions in category.");
+        }
+        else {
+            for (int i = 1; i < index; i = i + SINGLE_QUESTION_VOLUME) {
+                System.out.println(i + ": " + properties.getProperty(String.valueOf(i)));
+            }
         }
     }
 
@@ -118,15 +127,18 @@ public class QuestionCategory {
             index = readIndex(properties, questionCategory);
 
             showQuestionRemovalList(questionCategory);
-            number = takeQuestionNumberFromUser(bufferedReader);
 
-            if (number == 0) {
-                System.out.println("Incorrect input. Try again.");
-            } else {
+            if(index != 1) {
+                number = takeQuestionNumberFromUser(bufferedReader);
 
-                removeQuestionFromFile(properties);
-                updateQuestionsNumbers(properties);
-                updateFile(properties, questionCategory);
+                if (number == 0) {
+                    System.out.println("Incorrect input. Try again.");
+                } else {
+
+                    removeQuestionFromFile(properties);
+                    updateQuestionsNumbers(properties);
+                    updateFile(properties, questionCategory);
+                }
             }
         }
     }
